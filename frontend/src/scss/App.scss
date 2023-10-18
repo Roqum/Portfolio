@@ -1,3 +1,25 @@
 .bg-gray800 {
     background-color: #495057;
 }
+.bg-gray900 {
+    background-color: #3e444a;
+}
+.nav-custom {
+    position: fixed !important;
+    z-index: 999 !important;
+}
+.btn-default {
+    border-radius: 3px !important;
+}
+.btn-default:hover{
+    background-color: brown !important;
+    border-color: #285e8e; /*set the color you want here*/
+}
+.btn-default:active{
+    font-weight: bold !important;
+    border-color: #285e8e; /*set the color you want here*/
+}
+.fs-7 {
+    font-size: 14px !important;
+}
+
