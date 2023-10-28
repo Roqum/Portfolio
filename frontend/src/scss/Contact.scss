@@ -1,0 +1,9 @@
+.visibleAlert{
+    opacity: 1 !important;
+    max-height: 100% !important;
+    background-color: #ECFFDC !important;
+}
+.animationAlert {
+    opacity: 0 ;
+    transition: opacity 0.4s ease-in-out;
+}
