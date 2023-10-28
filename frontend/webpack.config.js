@@ -9,10 +9,16 @@ module.exports = {
     path: path.resolve(__dirname, '/dist'),
     publicPath: '/'
   },
-  devtool: 'inline-source-map',
+  //devtool: 'inline-source-map',
   devServer:  {
+    hot: false,
     historyApiFallback: true,
     port:4200,
+    headers: {
+      "Access-Control-Allow-Origin": "http://localhost:18080/",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

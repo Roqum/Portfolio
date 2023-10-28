@@ -1,6 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Contact() {
+    const [inputs,setInputs] = useState({
+        email: "",
+        message: ""
+    })
+
+    const handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value;
+        setInputs((prevFormData) => ({ ...prevFormData, [name]: value }));
+    }
+
+    const sendEmail = (event) => {
+        event.preventDefault();
+        console.log(inputs.email, inputs.message);
+        fetch('http://localhost:8000/sendMail', {
+            method: "POST",
+            body: JSON.stringify({
+                emailFromAddr: inputs.email,
+                message: inputs.message
+            }),
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
+        .then(res => res.text())
+        .then(text => console.log(text));
+    }
     return (
         <>
             <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark text-white opacity-0">
@@ -15,14 +42,14 @@ function Contact() {
                     <p className='text-white'>
                         Use my email or following form to write me a message.
                     </p>
-                    <form className='text-white'>
+                    <form className='text-white' onSubmit={sendEmail}>
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                            <input type="email" className="form-control" name="email" value={inputs.email} onChange={handleChange} aria-describedby="emailHelp"/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="exampleInputPassword1" className="form-label">Message</label>
-                            <textarea type="text" className="form-control" id="exampleInputPassword1" rows="6"/>
+                            <textarea type="text" className="form-control" name="message" value={inputs.message} onChange={handleChange} rows="6"/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="formFileSm" className="form-label">Attachment</label>
