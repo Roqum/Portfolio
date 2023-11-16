@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import NavBar from '../components/NavBar.jsx'
+import NavBar from '../components/NavBar.jsx';
+import "../scss/Books.scss";
 
 function Books() {
 
@@ -15,20 +16,19 @@ function Books() {
 
     return (
         <>
-            <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark text-white opacity-0">
+            <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark fc-gray800 opacity-0">
                 <button className="navbar-brand mb-0 h1 opacity-0">test</button>
             </div>
-            <div className="container py-5 mx-auto w-75 bg-gray900 min-vh-100 ">
-                <div className='text-white h3 text-center'>Relevant Books I read</div>
-
+            <div className="container py-5 mx-auto w-75 bg-gray900 min-vh-100 fc-gray800 ">
+                <div className='h3 text-center'><span className='fc-orange'>Relevant Books I read</span></div>
+                <hr className='hrStyle container'/>
+                
                 {books?.map(book => 
-                    <div className='row text-white py-5' key={book.isbn}>
-                        <div className='col-3'>
-                            <div className='container py-0 px-6'> 
-                                <img src={'http://localhost:8000/images/books/' + book.imageName} alt="Clean Code" className="mw-100"/>
-                            </div>
+                    <div className='row fc-gray800 py-5' key={book.isbn}>
+                        <div className='col-3 mh-100'>
+                            <img src={'http://localhost:8000/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
                         </div>
-                        <div className='col-9 text-white'>
+                        <div className='col-9 fc-gray800'>
                             <div className='row'>
                                 <div className='col-12'>
                                     <div className='row'>
@@ -50,7 +50,7 @@ function Books() {
                                                 Click to Read
                                             </a>
                                             <div className="collapse" id={book.isbn}>
-                                                <div className='text-white' style={{"white-space": "pre-wrap"}}>
+                                                <div className='fc-gray800' style={{"white-space": "pre-wrap"}}>
                                                     {book.description}
                                                 </div>
                                             </div>
@@ -71,6 +71,7 @@ function Books() {
                                 </div>
                             </div>
                         </div>
+                        <hr className='hrStyle container'/>
                     </div>
                 )}
                 

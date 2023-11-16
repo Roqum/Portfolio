@@ -6,7 +6,6 @@ import '../scss/Projects.scss';
 const Art = (props) => {
 
     useEffect(() => {
-    fetch('http://localhost:18080/books/images/cleanCode.jpg').then(date =>data.blob());
 },[]);
     return (
         <>         

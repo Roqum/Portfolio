@@ -34,8 +34,8 @@ const App = () => {
     }
 
     return (
-        <div className='bg-gray800 bg-gradient'>
-            <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark text-white opacity-75">
+        <div className='bg-gray800'>
+            <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg fc-gray800 opacity-75">
                 <div className='container w-65'>
                     <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
                     <ul className="navbar-nav mr-auto">
@@ -63,6 +63,7 @@ const App = () => {
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
+            <footer className='bg-orange-darker text-center'>Copyright by David Burgstaller</footer>
       </div>
     );
 }

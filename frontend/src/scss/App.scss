@@ -1,8 +1,29 @@
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #e99000 !important;
+    border-color: #c27905 !important;
+}
+.btn-primary:hover {
+    background-color: #d48300 !important;
+    border-color: #c77e09 !important;
+}
+.fc-gray800 {
+    color: #c4c4c4;
+}
+.fc-orange {
+    color: #e99000;
+}
+.bg-orange {
+    background-color: #e99000;
+}
+.bg-orange-darker {
+    background-color: #c67f0c;
+}
 .bg-gray800 {
-    background-color: #495057;
+    background-color: #c4c4c4 !important;
 }
 .bg-gray900 {
-    background-color: #3e444a;
+    background-color: #2e2e2e !important;
 }
 .nav-custom {
     position: fixed !important;

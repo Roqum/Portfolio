@@ -20,43 +20,43 @@ const Home = (props) => {
                 <div className={`container mx-auto w-65 d-flex h-100 align-items-center animation ${props.visibility ? 'visible' : ''}`}>
                     <div className="row w-100 ">
                         <div className="col text-center pt-5">
-                                <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5`}>
-                                    <FaCode size={100} color='white' opacity={.65} className='mb-5'/>
-                                    <br/>
-                                    <h1 className='text-white font-weight-bold'>Coding</h1>
-                                </button> 
+                            <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5`}>
+                                <FaCode size={100} color='white' opacity={.65} className='mb-5'/>
+                                <br/>
+                                <h1 className='font-weight-bold text-white'>Coding</h1>
+                            </button> 
                         </div>
                         <div className="col text-center pt-5">
-                                <button onClick={ props.visibility ? navigateToArt : null} className={`btn btn-project h-100 w-100 py-5`}>
-                                    <FaPaintBrush size={100} color='white' opacity={.65} className='mb-5'/>
-                                    <br/>
-                                    <h1 className='text-white font-weight-bold'>Art</h1>
-                                </button>
+                            <button onClick={ props.visibility ? navigateToArt : null} className={`btn btn-project h-100 w-100 py-5`}>
+                                <FaPaintBrush size={100} color='white' opacity={.65} className='mb-5'/>
+                                <br/>
+                                <h1 className='font-weight-bold text-white'>Art</h1>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="container py-4 px-6 mx-auto w-65">
-                <div className={`hide ${props.visibility ? '' : 'visible'}`}>
-                    <div className={`h4 text-center text-white`}>About me!</div>
-                    <div className={`text-white`}>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <div className="text-center py-4 px-5 mx-auto w-100 bg-gray900 display-inline-block">
+                <div className={`hide bg-gray900 h-100 ${props.visibility ? 'visible' : ''}`}>
+                    <div className="fc-gray800 mw-100">
+                        <h4 className='text-center fc-orange'>Projects!</h4>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et 
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut 
+                        labore et dolore magna aliquyam erat, sed diam voluptua.orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et 
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
                     </div>
                 </div>
-                <div className={`hide ${props.visibility ? 'visible' : ''}`}>
-                    <div className={`h4 text-center text-white`}>Projects!</div>
-                    <div className={`text-white`}>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et 
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut 
-                    labore et dolore magna aliquyam erat, sed diam voluptua.orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et 
-                    ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                <div className={`hide bg-gray900 h-100 ${props.visibility ? '' : 'visible'}`}>
+                    <div className="fc-gray800 mw-100">
+                        <h4 className='text-center fc-orange'>About me!</h4>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     </div>
                 </div>
             </div>
