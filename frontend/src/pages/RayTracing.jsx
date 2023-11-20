@@ -1,0 +1,35 @@
+import React, { useEffect, useState } from 'react';
+import { FaCode, FaPaintBrush } from 'react-icons/fa';
+
+
+const RayTracing = (props) => {
+    const [videoData, setVideoData] = useState('');
+
+    /* useEffect(() => {
+        fetch('http://localhost:8000/video/RaytracingSphereTriangle.mp4')
+            .then(data => data.blob())
+            .then(blob => URL.createObjectURL(blob))
+            .then(video => setVideoData(video));
+    },[]); */
+    return (
+        <>  <div className='container text-center pt-5 '>      
+                <video autoPlay className='w-75'  muted='true'>
+                    <source src="http://localhost:8000/video/RaytracingSphereTriangle.mp4" type="video/mp4" />
+                </video>
+            </div> 
+            <div className="container py-5 px-6 mx-auto w-65 bg-gray900 min-vh-100 ">
+                <div className='text-white h3 text-center'>RayTracing!</div>
+                <div className='text-white'>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default RayTracing;

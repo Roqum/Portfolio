@@ -9,6 +9,7 @@ import Art from './pages/Art.jsx';
 import Books from './pages/Books.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
+import RayTracing from './pages/RayTracing.jsx'
 
 // Components
 import { TiInfoLarge } from 'react-icons/ti';
@@ -35,8 +36,8 @@ const App = () => {
 
     return (
         <div className='bg-gray800'>
-            <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg fc-gray800 opacity-75">
-                <div className='container w-65'>
+            <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg fc-gray800 bg-orange opacity-90">
+                <div className='container w-75'>
                     <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
@@ -62,8 +63,15 @@ const App = () => {
                 <Route path="books" element={<Books />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="rayTracing" element={<RayTracing />} />
             </Routes>
-            <footer className='bg-orange-darker text-center'>Copyright by David Burgstaller</footer>
+            <footer className='bg-orange'>
+                <div className='position-relative h-100 w-100'>
+                    <div className='position-absolute top-50 start-50 translate-middle'>
+                        Copyright by David Burgstaller
+                    </div>
+                </div>
+            </footer>
       </div>
     );
 }

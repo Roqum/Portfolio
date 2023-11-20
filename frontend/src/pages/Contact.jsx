@@ -47,8 +47,12 @@ function Contact() {
 
     return (
         <>
-            <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark fc-gray800 opacity-0">
-                <button className="navbar-brand mb-0 h1 opacity-0">test</button>
+            <div className='z-0 contact-as-image w-100'>
+                <div className='position-relative h-100 w-100'>
+                    <div className='position-absolute top-50 start-50 translate-middle display-1 text-white fw-normal'>
+                    Contact Me
+                    </div> 
+                </div>
             </div>
             <div className="container py-5 px-6 mx-auto w-75 bg-gray900 min-vh-100 ">
                 <div className="p5-4 px-6 w-75 mx-auto">
@@ -64,11 +68,11 @@ function Contact() {
                     <form className='fc-gray800 needs-validation' onSubmit={sendEmail}>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label fc-gray800">Email address</label>
-                            <input type="email" className="form-control bg-gray800" name="email" id="email" value={inputs.email} onChange={handleChange} aria-describedby="emailHelp" required/>
+                            <input type="email" className="form-control bg-textfield" name="email" id="email" value={inputs.email} onChange={handleChange} aria-describedby="emailHelp" required/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="message" className="form-label fc-gray800">Message</label>
-                            <textarea type="text" className="form-control bg-gray800" name="message" id="message" value={inputs.message} onChange={handleChange} rows="6" required/>
+                            <textarea type="text" className="form-control bg-textfield" name="message" id="message" value={inputs.message} onChange={handleChange} rows="6" required/>
                         </div>
                         
                         <button type="submit" className="bg-orange btn btn-primary fc-gray800">Send</button> 

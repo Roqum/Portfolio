@@ -20,14 +20,14 @@ const Home = (props) => {
                 <div className={`container mx-auto w-65 d-flex h-100 align-items-center animation ${props.visibility ? 'visible' : ''}`}>
                     <div className="row w-100 ">
                         <div className="col text-center pt-5">
-                            <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5`}>
+                            <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5 bg-orange`}>
                                 <FaCode size={100} color='white' opacity={.65} className='mb-5'/>
                                 <br/>
                                 <h1 className='font-weight-bold text-white'>Coding</h1>
                             </button> 
                         </div>
-                        <div className="col text-center pt-5">
-                            <button onClick={ props.visibility ? navigateToArt : null} className={`btn btn-project h-100 w-100 py-5`}>
+                        <div className="col text-center pt-5 ">
+                            <button onClick={ props.visibility ? navigateToArt : null} className={`btn btn-project h-100 w-100 py-5 bg-orange`}>
                                 <FaPaintBrush size={100} color='white' opacity={.65} className='mb-5'/>
                                 <br/>
                                 <h1 className='font-weight-bold text-white'>Art</h1>

@@ -1,46 +1,88 @@
 
 .btn-primary, .btn-primary:active, .btn-primary:visited {
-    background-color: #e99000 !important;
-    border-color: #c27905 !important;
+    background-color: #F2BC58 !important;
+    border-color: #F2BC58 !important;
+    color: #201E20 !important;
+    font-weight: 600 !important;
 }
 .btn-primary:hover {
-    background-color: #d48300 !important;
-    border-color: #c77e09 !important;
+    background-color: #BF9445 !important;
+    border-color: #BF9445 !important;
+}
+.btn-project  {
+    border-radius: 3px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.btn-project:hover {
+    border-width: 1px !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-color: rgba(253, 253, 253, 0.3) !important;
 }
 .fc-gray800 {
-    color: #c4c4c4;
+    color: #e7e3da;
+}
+.opacity-90 {
+    opacity: 0.9;
 }
 .fc-orange {
-    color: #e99000;
+    color: #e7e3da ;
 }
 .bg-orange {
-    background-color: #e99000;
+    background-color: #F2BC58;
+    color: #201E20 !important;
+    opacity: 0.9;
 }
-.bg-orange-darker {
-    background-color: #c67f0c;
+
+.bg-orange-lighter {
+    background-color: #F4D7A1
 }
 .bg-gray800 {
-    background-color: #c4c4c4 !important;
+    background-color: #201E20 !important;
 }
 .bg-gray900 {
-    background-color: #2e2e2e !important;
+    background-color: #201E20 !important;
 }
 .nav-custom {
     position: fixed !important;
     z-index: 999 !important;
 }
 .btn-default {
-    border-radius: 3px !important;
+    border-radius: 0px !important;
+    color: #2e1902 !important;
+    font-weight: 500 !important;
 }
 .btn-default:hover{
-    background-color: brown !important;
-    border-color: #285e8e; /*set the color you want here*/
+    background-color: #F4D7A1 !important;
+    border-radius: 0px !important;
+    border-color: #F4D7A1; 
+    color: #190e00 !important;
 }
 .btn-default:active{
-    font-weight: bold !important;
+    //font-weight: bold !important;
     border-color: #285e8e; /*set the color you want here*/
 }
 .fs-7 {
     font-size: 14px !important;
+}
+hr.hrStyle {
+    margin-top: 50px;
+    border: 2px solid #F2BC58;
+    width: 30%;
+    border-radius: 3px !important;
+}
+.vrStyle {
+    position: relative;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -12px;
+    top: 40%;
+    height: 20%;
+    border-left: 100px solid #F2BC58; 
+}
+footer {
+    height: 80px;
+
 }
 

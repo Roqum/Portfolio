@@ -16,13 +16,14 @@ function Books() {
 
     return (
         <>
-            <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark fc-gray800 opacity-0">
-                <button className="navbar-brand mb-0 h1 opacity-0">test</button>
+            <div className='z-0 book-as-image w-100'>
+                <div className='position-relative h-100 w-100'>
+                    <div className='position-absolute top-50 start-50 translate-middle display-1 text-white fw-normal'>
+                    Relevant Books I read
+                    </div> 
+                </div>
             </div>
             <div className="container py-5 mx-auto w-75 bg-gray900 min-vh-100 fc-gray800 ">
-                <div className='h3 text-center'><span className='fc-orange'>Relevant Books I read</span></div>
-                <hr className='hrStyle container'/>
-                
                 {books?.map(book => 
                     <div className='row fc-gray800 py-5' key={book.isbn}>
                         <div className='col-3 mh-100'>
@@ -50,7 +51,7 @@ function Books() {
                                                 Click to Read
                                             </a>
                                             <div className="collapse" id={book.isbn}>
-                                                <div className='fc-gray800' style={{"white-space": "pre-wrap"}}>
+                                                <div className='fc-gray800' style={{"whiteSpace": "pre-wrap"}}>
                                                     {book.description}
                                                 </div>
                                             </div>
