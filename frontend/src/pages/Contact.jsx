@@ -19,7 +19,7 @@ function Contact() {
 
         if(inputs.email != ""|| nputs.email != "") {
             console.log(inputs.email, inputs.message);
-            fetch('api/sendMail', {
+            fetch('http://david-burgstaller.com/sendMail', {
                 method: "POST",
                 body: JSON.stringify({
                     emailFromAddr: inputs.email,
