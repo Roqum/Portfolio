@@ -7,7 +7,7 @@ function Books() {
     const [books,setBooks]= useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/books')
+        fetch('api/books')
             .then(data => data.json())
             .then(json => json.books)
             .then(allBooks => setBooks([...allBooks]))
@@ -27,7 +27,7 @@ function Books() {
                 {books?.map(book => 
                     <div className='row fc-gray800 py-5' key={book.isbn}>
                         <div className='col-3 mh-100'>
-                            <img src={'http://localhost:8000/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
+                            <img src={'api/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
                         </div>
                         <div className='col-9 fc-gray800'>
                             <div className='row'>

@@ -40,9 +40,9 @@ return (
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
                 <div className='col-3'>
-                    <img className="mw-100" id="raytracing" src={'http://localhost:8000/images/RaytracingThreeSpheres.jpg'}
+                    <img className="mw-100" id="raytracing" src={'api/images/RaytracingThreeSpheres.jpg'}
                             onMouseOver={() => changeImage("raytracing", require("../gifs/Raytracing.gif"))} 
-                            onMouseLeave={() => changeImage("raytracing", "http://localhost:8000/images/RaytracingThreeSpheres.jpg")}
+                            onMouseLeave={() => changeImage("raytracing", "api/images/RaytracingThreeSpheres.jpg")}
                         />
                     <div className="mt-3">
                         <span className='badge rounded-pill bg-orange'>Python</span>
@@ -64,9 +64,9 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Configurable Procedural Hextile-map Generator (current project)</h4>
                 <div className='col-3'>
-                    <img className="mw-100" id="mapGenerator" src={"http://localhost:8000/images/MapGenerator.jpg"} 
+                    <img className="mw-100" id="mapGenerator" src={"api/images/MapGenerator.jpg"} 
                         onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
-                        onMouseLeave={() => changeImage("mapGenerator", "http://localhost:8000/images/MapGenerator.jpg")}
+                        onMouseLeave={() => changeImage("mapGenerator", "api/images/MapGenerator.jpg")}
                     />
                      <div className="mt-3">
                         <span className='badge rounded-pill bg-orange me-1'>C#</span>
@@ -89,9 +89,9 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>This Portfolio Website</h4>
                 <div className='col-3'>
-                    <img className="mw-100" id="portfolio" src={"http://localhost:8000/images/Portfolio.jpg"} 
+                    <img className="mw-100" id="portfolio" src={"api/images/Portfolio.jpg"} 
                         onMouseOver={() => changeImage("portfolio", require("../gifs/Portfolio.gif"))} 
-                        onMouseLeave={() => changeImage("portfolio","http://localhost:8000/images/Portfolio.jpg")}
+                        onMouseLeave={() => changeImage("portfolio","api/images/Portfolio.jpg")}
                     />
                     <div className="mt-3">
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
@@ -117,7 +117,7 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
                 <div className='col-3'>
-                    <img className="mw-100" src={"http://localhost:8000/images/CNN.jpg"}/>
+                    <img className="mw-100" src={"api/images/CNN.jpg"}/>
                     <span className='badge rounded-pill bg-orange me-1 mt-3'>C++</span>
                     <span className='badge rounded-pill bg-orange me-1 mt-3'>Qt</span>
                 </div>
@@ -137,9 +137,9 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Data Visualization Website (Bechalor Thesis)</h4>
                 <div className='col-3'>
-                    <img className="mw-100" id="bachelor" src={"http://localhost:8000/images/BachelorThesis.jpg"} 
+                    <img className="mw-100" id="bachelor" src={"api/images/BachelorThesis.jpg"} 
                         onMouseOver={() => changeImage("bachelor", require("../gifs/Bachelor.gif"))} 
-                        onMouseLeave={() => changeImage("bachelor", "http://localhost:8000/images/BachelorThesis.jpg")}
+                        onMouseLeave={() => changeImage("bachelor", "api/images/BachelorThesis.jpg")}
                     />
                     <div className="mt-3">
                         <span className='badge rounded-pill bg-orange me-1'>Python</span>
