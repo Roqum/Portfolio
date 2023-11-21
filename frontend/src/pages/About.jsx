@@ -64,7 +64,7 @@ return (
             
             <div className='row fc-gray800 pt-5'>
                 <div className='col-3 mh-100'>
-                    <img src={'http://david-burgstaller.com/images/Gothic2.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'http://david-burgstaller.com/api/images/Gothic2.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-9 fc-gray800'>
                     <p>
@@ -82,7 +82,7 @@ return (
             <hr className='hrStyle container'/>
             <div className='row fc-gray800 pt-5'>
                 <div className='col-3 mh-100'>
-                    <img src={'http://david-burgstaller.com/images/OriAndTheBlindForest.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'http://david-burgstaller.com/api/images/OriAndTheBlindForest.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-9 fc-gray800'>
                     <p>
@@ -97,7 +97,7 @@ return (
             <hr className='hrStyle container'/>
             <div className='row fc-gray800 pt-5'>
                 <div className='col-3 mh-100'>
-                    <img src={'http://david-burgstaller.com/images/Civilization.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'http://david-burgstaller.com/api/images/Civilization.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-9 fc-gray800'>
                     <p>

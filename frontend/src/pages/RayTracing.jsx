@@ -8,7 +8,7 @@ const RayTracing = (props) => {
     return (
         <>  <div className='container text-center pt-5 '>      
                 <video autoPlay className='w-75'  muted='true'>
-                    <source src="http://david-burgstaller.com/video/RaytracingSphereTriangle.mp4" type="video/mp4" />
+                    <source src="http://david-burgstaller.com/api/video/RaytracingSphereTriangle.mp4" type="video/mp4" />
                 </video>
             </div> 
             <div className="container py-5 px-6 mx-auto w-65 bg-gray900 min-vh-100 ">
