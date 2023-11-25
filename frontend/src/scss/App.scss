@@ -66,10 +66,14 @@
     font-size: 14px !important;
 }
 hr.hrStyle {
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 0px;
     border: 2px solid #F2BC58;
-    width: 30%;
+    width: 40%;
     border-radius: 3px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
 }
 .vrStyle {
     position: relative;
@@ -85,5 +89,14 @@ footer {
     height: 80px;
 
 }
+.container {
+    width: 100% !important;
+    min-width: 100% !important;
+}
 
-
+@media (min-width: 992px) { 
+    .container {
+        max-width: 75% !important;
+        min-width: 75% !important;
+    }
+}

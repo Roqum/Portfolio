@@ -17,7 +17,7 @@ const Home = (props) => {
     return (
         <> 
             <div className='bg-as-image w-100'>
-                <div className={`container mx-auto w-65 d-flex h-100 align-items-center animation ${props.visibility ? 'visible' : ''}`}>
+                <div className={`container mx-auto d-flex h-100 align-items-center animation ${props.visibility ? 'visible' : ''}`}>
                     <div className="row w-100 ">
                         <div className="col text-center pt-5">
                             <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5 bg-orange`}>

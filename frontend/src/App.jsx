@@ -36,30 +36,34 @@ const App = () => {
 
     return (
         <div className='bg-gray800'>
-            <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg fc-gray800 bg-orange opacity-90">
-                <div className='container'>
-                    <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                        <button  className="nav-link btn btn-default active" onClick={toggleVisibility}><FaCode size={20}/> PROJECTS</button>
-                        </li>
-                        <li className="nav-item active">
-                        <Link className="nav-link btn btn-default active" to="/books"><FaBookOpen size={20}/> BOOKS</Link>
-                        </li>
-                        <li className="nav-item active">
-                        <Link className="nav-link btn btn-default active" to="/about"><TiInfoLarge size={21}/>ABOUT ME</Link>
-                        </li>
-                        <li className="nav-item active">
-                        <Link className="nav-link btn btn-default active" to="/contact"><BiSolidContact size={20}/> CONTACT</Link>
-                        </li>
-                    </ul>
-                </div>
+            <nav className="navbar navbar-expand-sm fc-gray800 bg-orange w-100 py-0">
+                    <div className="container">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
+                    <div className="collapse navbar-collapse flex-row-reverse" id="navbarToggleExternalContent">
+                        <ul className="navbar-nav">
+                            <li className="nav-item ">
+                            <button  className="btn btn-default w-100" onClick={toggleVisibility}><span className='float-start'><FaCode size={20}/> PROJECTS</span></button>
+                            </li>
+                            <li className="nav-item ">
+                            <Link className="btn btn-default w-100" to="/books"><span className='float-start'><FaBookOpen size={20}/> BOOKS</span></Link>
+                            </li>
+                            <li className="nav-item ">
+                            <Link className="btn btn-default w-100" to="/about"><span className='float-start'><TiInfoLarge size={21}/> ABOUT ME</span></Link>
+                            </li>
+                            <li className="nav-item ">
+                            <Link className="btn btn-default w-100" to="/contact"><span className='float-start'><BiSolidContact size={20}/> CONTACT</span></Link>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
             </nav>
             <Routes>
                 <Route path="/" element={<Home visibility={isVisible}/>}/>
                 <Route path="coding" element={<Coding/>} />
                 <Route path="art" element={<Art/>} />
-
                 <Route path="books" element={<Books />} />
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />

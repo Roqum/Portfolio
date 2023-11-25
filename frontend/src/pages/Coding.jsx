@@ -15,7 +15,7 @@ return (
         <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark opacity-0">
             <button className="navbar-brand mb-0 h1 opacity-0">test</button>
         </div>
-        <div className="container py-5 px-5 mx-auto w-75 bg-gray900 min-vh-100 ">
+        <div className="container py-5 px-5 mx-auto bg-gray900 min-vh-100 ">
             
             <div className='h3 text-center'>
                 <span className='fc-gray800'>Some Coding Projects!</span>

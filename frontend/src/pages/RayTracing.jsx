@@ -11,7 +11,7 @@ const RayTracing = (props) => {
                     <source src="http://david-burgstaller.com/api/video/RaytracingSphereTriangle.mp4" type="video/mp4" />
                 </video>
             </div> 
-            <div className="container py-5 px-6 mx-auto w-65 bg-gray900 min-vh-100 ">
+            <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
                 <div className='text-white h3 text-center'>RayTracing!</div>
                 <div className='text-white'>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 

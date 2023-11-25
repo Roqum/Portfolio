@@ -59,7 +59,7 @@ function Contact() {
                     </div> 
                 </div>
             </div>
-            <div className="container py-5 px-6 mx-auto w-75 bg-gray900 min-vh-100 ">
+            <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
                 <div className="p5-4 px-6 w-75 mx-auto">
                     <div className='row'>
                         <div className='col-1'>

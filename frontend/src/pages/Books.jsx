@@ -19,21 +19,21 @@ function Books() {
             <div className='z-0 book-as-image w-100'>
                 <div className='position-relative h-100 w-100'>
                     <div className='position-absolute top-50 start-50 translate-middle display-1 text-white fw-normal'>
-                    Relevant Books I read
+                        Relevant Books I read
                     </div> 
                 </div>
             </div>
-            <div className="container py-5 mx-auto bg-gray900 min-vh-100 fc-gray800 ">
+            <div className="container py-5 mx-auto bg-gray900 min-vh-100 fc-gray800">
                 {books?.map(book => 
                     <div className='row fc-gray800 py-5' key={book.isbn}>
-                        <div className='col-3 mh-100'>
+                        <div className='col-12 col-sm-3 mh-100'>
                             <img src={'http://david-burgstaller.com/api/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
                         </div>
-                        <div className='col-9 fc-gray800'>
+                        <div className='col-12 col-sm-9 fc-gray800'>
                             <div className='row'>
-                                <div className='col-12'>
+                                <div className='col-12 ms-3'>
                                     <div className='row'>
-                                        <div className='col-3'>Title:</div>
+                                        <div className='col-3 '>Title:</div>
                                         <div className='col-9'>{book.title}</div>
                                     </div>
                                     <div className='row'>
@@ -72,7 +72,7 @@ function Books() {
                                 </div>
                             </div>
                         </div>
-                        <hr className='hrStyle container'/>
+                        <hr className='hrStyle'/>
                     </div>
                 )}
                 
