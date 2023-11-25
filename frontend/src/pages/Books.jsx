@@ -23,7 +23,7 @@ function Books() {
                     </div> 
                 </div>
             </div>
-            <div className="container py-5 mx-auto w-75 bg-gray900 min-vh-100 fc-gray800 ">
+            <div className="container py-5 mx-auto bg-gray900 min-vh-100 fc-gray800 ">
                 {books?.map(book => 
                     <div className='row fc-gray800 py-5' key={book.isbn}>
                         <div className='col-3 mh-100'>

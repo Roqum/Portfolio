@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  //mode: 'development',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: '[name].bundle.js',
@@ -10,7 +10,7 @@ module.exports = {
     publicPath: ''
   },
   devtool: 'inline-source-map',
-  /* devServer:  {
+  devServer:  {
     hot: false,
     historyApiFallback: true,
     port:4200,
@@ -18,8 +18,15 @@ module.exports = {
       "Access-Control-Allow-Origin": "http://localhost:18080/",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-    }
-  }, */
+    },
+    proxy: {
+      '/api': {
+           target: 'http://localhost:4200',
+           router: () => 'http://localhost:8000',
+           logLevel: 'debug' /*optional*/
+      }
+   }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Output Management',

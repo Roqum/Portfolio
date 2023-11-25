@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import "../scss/Contact.scss";
+import {BsSend} from 'react-icons/bs';
+import { MdOutlineMail } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+
+
 
 function Contact() {
     const [inputs,setInputs] = useState({
@@ -50,16 +55,37 @@ function Contact() {
             <div className='z-0 contact-as-image w-100'>
                 <div className='position-relative h-100 w-100'>
                     <div className='position-absolute top-50 start-50 translate-middle display-1 text-white fw-normal'>
-                    Contact Me
+                        Write me!
                     </div> 
                 </div>
             </div>
             <div className="container py-5 px-6 mx-auto w-75 bg-gray900 min-vh-100 ">
                 <div className="p5-4 px-6 w-75 mx-auto">
-                    <div className='pb-4 text-center h2'><span className='fc-gray800'>Write me!</span></div>
-                    <p className='fc-gray800 fs-6'>
-                        <span className='fw-bolder'>E-mail: </span><a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href= "mailto:david.burgstaller@yahoo.de">david.burgstaller@yahoo.de</a>
-                    </p>
+                    <div className='row'>
+                        <div className='col-1'>
+                            <MdOutlineMail className="mb-2 fc-gray800" size={30}/>             
+                        </div>
+                        <div className='col-11'>
+                            <p className='fc-gray800 fs-6'>
+                                <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href= "mailto:david.burgstaller@yahoo.de">
+                                    david.burgstaller@yahoo.de
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-1'>
+                            <IoLocationOutline className="mb-2 fc-gray800" size={30}/>
+                        </div>
+                        <div className='col-11'>
+                        <p className='fc-gray800 fs-6'>
+                            <span className=''> 
+                                Frankfurt am Main <br />
+                                Germany
+                            </span>
+                        </p>
+                        </div>
+                    </div>
                     <br />
                     <p className='fc-gray800'>
                         Use my email or following form to write me a message.
@@ -67,15 +93,13 @@ function Contact() {
                     <br />
                     <form className='fc-gray800 needs-validation' onSubmit={sendEmail}>
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label fc-gray800">Email address</label>
-                            <input type="email" className="form-control bg-textfield" name="email" id="email" value={inputs.email} onChange={handleChange} aria-describedby="emailHelp" required/>
+                            <input type="email" className="form-control bg-textfield" name="email" id="email" value={inputs.email} placeholder='E-Mail Address' onChange={handleChange} aria-describedby="emailHelp" required/>
                         </div>
+                        <br />
                         <div className="mb-3">
-                            <label htmlFor="message" className="form-label fc-gray800">Message</label>
-                            <textarea type="text" className="form-control bg-textfield" name="message" id="message" value={inputs.message} onChange={handleChange} rows="6" required/>
+                            <textarea type="text" className="form-control bg-textfield" name="message" placeholder='Message' id="message" value={inputs.message} onChange={handleChange} rows="6" required/>
                         </div>
-                        
-                        <button type="submit" className="bg-orange btn btn-primary fc-gray800">Send</button> 
+                        <button type="submit" className="bg-orange btn btn-primary fc-gray800"><BsSend size={18}/>&ensp; Send</button> 
                         <h5 className={`alert alert-success animationAlert ${isEmailSent == 200 ? 'visibleAlert' : ''}`}>
                             Email was succsessfully sent
                         </h5>

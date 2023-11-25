@@ -37,7 +37,7 @@ const App = () => {
     return (
         <div className='bg-gray800'>
             <nav className="nav-custom w-100 py-0 fs-7 navbar navbar-expand-lg fc-gray800 bg-orange opacity-90">
-                <div className='container w-75'>
+                <div className='container'>
                     <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">

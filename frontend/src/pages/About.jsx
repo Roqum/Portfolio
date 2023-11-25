@@ -12,7 +12,7 @@ return (
                 </div> 
             </div>
         </div>
-        <div className="container pb-5 px-5 mx-auto w-75 fc-gray800 bg-gray900 min-vh-100 ">
+        <div className="container pb-5 px-5 mx-auto fc-gray800 bg-gray900 min-vh-100 ">
             
             <p className='pt-5'>
                 Hi, I'm David—an aspiring game developer driven by a love for programming with an enduring fascination for the artistic 

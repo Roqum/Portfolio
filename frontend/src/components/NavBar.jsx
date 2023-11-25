@@ -16,7 +16,7 @@ function NavBar() {
 
     return (
         <nav className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark text-white opacity-75">
-            <div className='container w-65'>
+            <div className='container'>
                 <Link className="navbar-brand mb-0 h1" to="/">David Burgstaller</Link> 
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
