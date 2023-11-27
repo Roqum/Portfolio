@@ -62,13 +62,13 @@ return (
 
             <div className='h3 text-center pt-5'><span className='fc-gray800'>Favorite and inspiring Games</span></div>
             
-            <div className='row fc-gray800 pt-5'>
-                <div className='col-3 mh-100'>
+            <div className='row fc-gray800 pt-5 justify-content-center'>
+                <div className='col-sm-3 col-9 mh-100 pb-4'>
                     <img src={'http://david-burgstaller.com/api/images/Gothic2.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
-                <div className='col-9 fc-gray800'>
-                    <p>
+                <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Gothic 2</span></div>
+                    <p>
 
                         My absolute favorite game even today is "Gothic 2". It inspired me the most for choosing my career path. The
                         astonishing livly atmoshpere and the feeling to immerse myself into another real world just keeps me fascinating till today.
@@ -79,14 +79,14 @@ return (
                     </p>
                 </div>
             </div>
-            <hr className='hrStyle container'/>
-            <div className='row fc-gray800 pt-5'>
-                <div className='col-3 mh-100'>
+            <hr className='hrStyle mt-4 mb-3'/>
+            <div className='row fc-gray800 pt-5 justify-content-center'>
+                <div className='col-sm-3 col-9 mh-100 pb-4'>
                     <img src={'http://david-burgstaller.com/api/images/OriAndTheBlindForest.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
-                <div className='col-9 fc-gray800'>
-                    <p>
+                <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Ori and the Blind forest</span></div>
+                    <p>
 
                         Even though I just told that graphics is not the hearth of a game, "Ori and the Blind forest" proofed me somewhat otherwise.
                         This game inspired me for its beauty and keeps a slot as a art masterpiece in my head. The emotional storytelling in combination
@@ -94,14 +94,14 @@ return (
                     </p>
                 </div>
             </div>
-            <hr className='hrStyle container'/>
-            <div className='row fc-gray800 pt-5'>
-                <div className='col-3 mh-100'>
+            <hr className='hrStyle mt-4 mb-3'/> 
+            <div className='row fc-gray800 pt-5 justify-content-center'>
+                <div className='col-sm-3 col-9 mh-100 pb-4'>
                     <img src={'http://david-burgstaller.com/api/images/Civilization.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
-                <div className='col-9 fc-gray800'>
-                    <p>
+                <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Sid Meier's Civilization</span></div>
+                    <p>
 
                         I cannot leave out this game because this is probably the game that I spent on the most time out of all other games.
                         I started the "Sid Meier's Civilization" series with the third part and played all of the following parts extensively. 

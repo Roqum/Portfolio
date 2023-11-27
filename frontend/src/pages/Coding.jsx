@@ -7,7 +7,6 @@ import '../scss/Coding.scss';
 const Coding = (props) => {
 
     const changeImage = (id, source) => {
-        console.log("i am here", id)
         document.getElementById(id).setAttribute("src", source);
     }
 return (
@@ -33,22 +32,23 @@ return (
                     during this time were an simple spaceship Shoot 'em up game, a recreation of the game Bomberman and the classical game 
                     Pong programmed with DirectX.
                 </p>
-            <hr className='hrStyle container'/>
+                <hr className='hrStyle mt-5 mb-5'/>
 
             </div>
             
+
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
-                <div className='col-3'>
+                <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="raytracing" src={'http://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
                             onMouseOver={() => changeImage("raytracing", require("../gifs/Raytracing.gif"))} 
                             onMouseLeave={() => changeImage("raytracing", "http://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
                         />
-                    <div className="mt-3">
+                    <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange'>Python</span>
                     </div>
                 </div>
-                <div className='col-8'>
+                <div className='col-sm-8 col-12'>
                     <p>
                         In this project I used a raytracing algorithm to render spheres and trianges inside a 3D space. Therefore I placed a 
                         fixed camera and a canvas inside a coordinate axis. Outgoing from the camera rays are casted to each pixel of the canvas.
@@ -58,22 +58,22 @@ return (
 
                 </div>
             </div>
-            <hr className='hrStyle container'/>
+            <hr className='hrStyle my-5'/>
 
 
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Configurable Procedural Hextile-map Generator (current project)</h4>
-                <div className='col-3'>
+                <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="mapGenerator" src={"http://david-burgstaller.com/api/images/MapGenerator.jpg"} 
                         onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
                         onMouseLeave={() => changeImage("mapGenerator", "http://david-burgstaller.com/api/images/MapGenerator.jpg")}
                     />
-                     <div className="mt-3">
+                     <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>C#</span>
                         <span className='badge rounded-pill bg-orange me-1'>Unity</span>
                     </div>
                 </div>
-                <div className='col-8'>
+                <div className='col-sm-8 col-12'>
                     <p>
                         This is the current project I am working at. Actually I want to code a little strategic game and thought a configurable
                          map-tile generator would be greate to test how the map could look like. 
@@ -83,22 +83,22 @@ return (
                     </p>
                     <a className="align-bottom bg-orange btn btn-primary" href="\mapGenerator">See more</a>
                 </div>
-                <hr className='hrStyle container'/>
+                <hr className='hrStyle my-5'/>
             </div>
 
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>This Portfolio Website</h4>
-                <div className='col-3'>
+                <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="portfolio" src={"http://david-burgstaller.com/api/images/Portfolio.jpg"} 
                         onMouseOver={() => changeImage("portfolio", require("../gifs/Portfolio.gif"))} 
                         onMouseLeave={() => changeImage("portfolio","http://david-burgstaller.com/api/images/Portfolio.jpg")}
                     />
-                    <div className="mt-3">
+                    <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
                         <span className='badge rounded-pill bg-orange me-1'>C++</span>
                     </div>
                 </div>
-                <div className='col-8 '>
+                <div className='col-sm-8 col-12'>
                     <p>
                         I created this website on my own. I decided to use C++ for the backend with purpose to get used to it again. My last C++
                         project was a while ago so I thought it was a good opertunity to freshen it up again.
@@ -111,17 +111,17 @@ return (
                         Explore this website to see more about this project.
                     </p>
                 </div>        
-                <hr className='hrStyle container'/>
+                <hr className='hrStyle my-5'/>
             </div>
             
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
-                <div className='col-3'>
+                <div className='col-sm-4 col-12'>
                     <img className="mw-100" src={"http://david-burgstaller.com/api/images/CNN.jpg"}/>
-                    <span className='badge rounded-pill bg-orange me-1 mt-3'>C++</span>
-                    <span className='badge rounded-pill bg-orange me-1 mt-3'>Qt</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
                 </div>
-                <div className='col-8'>
+                <div className='col-sm-8 col-12'>
                     <p>
                         As a part of an universtiy Projekt we received a big dataset from a particle accelerator. The data contains
                         information about the collision of particles. In some of these collisions Quark-Gluon-Plasma (QGP) emerged but in 
@@ -131,24 +131,24 @@ return (
                     </p>
                     <a className="align-bottom bg-orange btn btn-primary" href="\cnn">See more</a>
                 </div>
-                <hr className='hrStyle container'/>
+                <hr className='hrStyle my-5'/>
             </div>
 
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Data Visualization Website (Bechalor Thesis)</h4>
-                <div className='col-3'>
+                <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="bachelor" src={"http://david-burgstaller.com/api/images/BachelorThesis.jpg"} 
                         onMouseOver={() => changeImage("bachelor", require("../gifs/Bachelor.gif"))} 
                         onMouseLeave={() => changeImage("bachelor", "http://david-burgstaller.com/api/images/BachelorThesis.jpg")}
                     />
-                    <div className="mt-3">
+                    <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>Python</span>
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
                         <span className='badge rounded-pill bg-orange me-1'>Leaflet</span>
                         <span className='badge rounded-pill bg-orange me-1'>D3js</span>
                     </div>
                 </div>
-                <div className='col-8'>
+                <div className='col-sm-8 col-12'>
                     <p>
                     This is a website I created for my bachelor thesis project. It is a responsive data visualization website with some 
                     data mining allgorithm to get valueble information out of a big dataset.
@@ -165,7 +165,7 @@ return (
                     <a className="align-bottom bg-orange btn btn-primary" href="\mapGenerator">See more</a>
 
                 </div>
-                <hr className='hrStyle container'/>
+                <hr className='hrStyle my-5'/>
             </div>
         </div>
     </>
