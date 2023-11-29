@@ -1,10 +1,36 @@
+#resize{
+    height: 80vh;
+    transition: 0.8s;
+}
 .bg-as-image {
-    background-image: url('http://david-burgstaller.com/api/images/mainPage.png');
+    background-image: url('http://localhost:8000/images/MainImage2.jpg');
     width: 100%;
-    height: 544px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.arrow {
+    z-index: 9999;
+    opacity: 0.7;
+    border: solid white;
+    border-radius: 3px;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 30px;
+}
+.arrow:hover {
+    z-index: 9999;
+    opacity: 1;
+    border: solid white;
+    border-radius: 3px;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 30px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .animation {

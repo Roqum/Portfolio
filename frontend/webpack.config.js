@@ -18,14 +18,7 @@ module.exports = {
       "Access-Control-Allow-Origin": "http://localhost:18080/",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-    },
-    proxy: {
-      '/api': {
-           target: 'http://localhost:4200',
-           router: () => 'http://localhost:8000',
-           logLevel: 'debug' /*optional*/
-      }
-   }
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

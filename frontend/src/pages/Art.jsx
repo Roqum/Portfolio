@@ -4,25 +4,128 @@ import '../scss/Projects.scss';
 
 
 const Art = (props) => {
-
+const [modalImageURL, setModalImageURL] = useState('')
     useEffect(() => {
 },[]);
     return (
-        <>         
+        <>  
+                  
             <div className="w-100 py-0 fs-7 navbar navbar-expand-lg navbar-dark bg-dark text-white opacity-0">
                 <button className="navbar-brand mb-0 h1 opacity-0">test</button>
             </div>
-            <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
-                <div className='text-white h3 text-center'>Art!</div>
-                <div className='text-white'>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            <div className="modal fade" id="imageModal" tabIndex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-xl">
+                    <div className="modal-content">
+                        <div className="modal-body">    
+                            <button type="button" className="btn-close float-end pt-0 mt-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <img className="w-100 h-100"  src={modalImageURL}/>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
+                <div className=' h3 text-center pb-4'><span className='fc-gray800'>Meshes</span></div>
+                <div className='row text-center text-lg-start fc-gray800'>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100" >
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HavenHouseOutside.png" onClick={() => setModalImageURL("http://localhost:8000/images/HavenHouseOutside.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HavenHouseEG.png" onClick={() => setModalImageURL("http://localhost:8000/images/HavenHouseEG.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HavenHouseOG1.png" onClick={() => setModalImageURL("http://localhost:8000/images/HavenHouseOG1.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HavenHouseOG2.png" onClick={() => setModalImageURL("http://localhost:8000/images/HavenHouseOG2.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/SmithOutside.png" onClick={() => setModalImageURL("http://localhost:8000/images/SmithOutside.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/SmithOutside2.png" onClick={() => setModalImageURL("http://localhost:8000/images/SmithOutside2.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/SmithEG.png" onClick={() => setModalImageURL("http://localhost:8000/images/SmithEG.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HafenDock.png" onClick={() => setModalImageURL("http://localhost:8000/images/HafenDock.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HafenDockHouse.png" onClick={() => setModalImageURL("http://localhost:8000/images/HafenDockHouse.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/Temple.png" onClick={() => setModalImageURL("http://localhost:8000/images/Temple.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4 h-100">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/CityWall.png" onClick={() => setModalImageURL("http://localhost:8000/images/CityWall.png")} alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
+                <div className=' h3 text-center pb-4'><span className='fc-gray800'>Paintings and Drawings</span></div>
+                <div className='row text-center text-lg-start fc-gray800'>
+                    <div className="col-lg-8 col-sm-12 col-12">
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/DragonDrawing.jpg" onClick={() => setModalImageURL("http://localhost:8000/images/DragonDrawing1.jpg")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4" >
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/BilboDrawing.jpg" onClick={() => setModalImageURL("http://localhost:8000/images/BilboDrawing.jpg")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/CementaryDrawing.jpg" onClick={() => setModalImageURL("http://localhost:8000/images/CementaryDrawing.jpg")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/LandscapeDrawing.jpg" onClick={() => setModalImageURL("http://localhost:8000/images/LandscapeDrawing.jpg")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <div className='h6 text-center'>currently working at:</div>
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/DesertPainting.jpg" onClick={() => setModalImageURL("http://localhost:8000/images/DesertPainting.jpg")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/HandDrawing.png" onClick={() => setModalImageURL("http://localhost:8000/images/HandDrawing.png")} alt=""/>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-sm-6 col-12">
+                        <a href="#" className="d-block mb-4">
+                            <img className="img-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" src="http://localhost:8000/images/Crystal.png" onClick={() => setModalImageURL("http://localhost:8000/images/Crystal.png")} alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </>
     );
 }

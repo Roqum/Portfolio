@@ -6,7 +6,16 @@ import '../scss/Home.scss';
 
 const Home = (props) => {
 
+    window.onscroll = function() {scrollFunction()};
     let navigate = useNavigate(); 
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("resize").style.height = "50vh";
+        } else {
+          document.getElementById("resize").style.height = "80vh";
+        }
+      }
 
     const navigateToArt = () => {
         navigate("/art");
@@ -16,30 +25,23 @@ const Home = (props) => {
     } 
     return (
         <> 
-            <div className='bg-as-image w-100'>
-                <div className={`container mx-auto d-flex h-100 align-items-center animation ${props.visibility ? 'visible' : ''}`}>
-                    <div className="row w-100 ">
-                        <div className="col text-center pt-5">
-                            <button onClick={props.visibility ? navigateToCoding : null} className={`btn btn-project h-100 w-100 py-5 bg-orange`}>
-                                <FaCode size={100} color='white' opacity={.65} className='mb-5'/>
-                                <br/>
-                                <h1 className='font-weight-bold text-white'>Coding</h1>
-                            </button> 
-                        </div>
-                        <div className="col text-center pt-5 ">
-                            <button onClick={ props.visibility ? navigateToArt : null} className={`btn btn-project h-100 w-100 py-5 bg-orange`}>
-                                <FaPaintBrush size={100} color='white' opacity={.65} className='mb-5'/>
-                                <br/>
-                                <h1 className='font-weight-bold text-white'>Art</h1>
-                            </button>
+            <div id="resize"className='bg-as-image w-100'>
+                <div className='row h-100 mh-100'>
+                    <div className='col-12 text-white col-12 d-flex justify-content-center flex-column align-self-end align-items-center'>
+                        <p className='h1'>Welcome to my Portfolio!</p>
+                        <p>I am David, an aspiring game programmer who loves coding</p>
+                    </div>
+                    <div className='col-12 d-flex justify-content-center align-items-end'>
+                        <div className="">
+                            <a href="#section02 " ><i class="arrow down py-4 px-4 mb-4"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="text-center py-4 px-5 mx-auto w-100 bg-gray900 display-inline-block">
-                <div className={`hide bg-gray900 h-100 ${props.visibility ? 'visible' : ''}`}>
+            <div className="py-4 px-5 mx-auto w-100 bg-gray900 container">
+                <div className="bg-gray900 h-100">
                     <div className="fc-gray800 mw-100">
-                        <h4 className='text-center fc-orange'>Projects!</h4>
+                        <h4 className='text-center fc-orange py-4' id="section02">About Me!</h4>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr. At vero eos et accusam et justo duo dolores et 
                         ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy eirmod tempor invidunt ut 
                         labore et dolore magna aliquyam erat, sed diam voluptua.orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
@@ -48,9 +50,9 @@ const Home = (props) => {
                         ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
                     </div>
                 </div>
-                <div className={`hide bg-gray900 h-100 ${props.visibility ? '' : 'visible'}`}>
+                <div className="bg-gray900 h-100">
                     <div className="fc-gray800 mw-100">
-                        <h4 className='text-center fc-orange'>About me!</h4>
+                        <h4 className='text-center fc-orange py-4'>Projects!</h4>
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                         labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                         et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
