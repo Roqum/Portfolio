@@ -3,6 +3,15 @@ import NavBar from '../components/NavBar.jsx';
 import "../scss/Books.scss";
 
 function Books() {
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("resize").style.height = "50vh";
+        } else {
+          document.getElementById("resize").style.height = "80vh";
+        }
+    }
 
     const [books,setBooks]= useState([]);
 
@@ -16,7 +25,7 @@ function Books() {
 
     return (
         <>
-            <div className='z-0 book-as-image w-100'>
+            <div id="resize" className='z-0 book-as-image w-100'>
                 <div className='position-relative h-100 w-100'>
                     <div className='position-absolute top-50 start-50 translate-middle display-1 text-white fw-normal'>
                         Relevant Books I read

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import { Link } from 'react-router-dom';
+import { FaRegCopyright } from "react-icons/fa";
+
 
 // Rounting Pages
 import Home from './pages/Home.jsx';
@@ -9,7 +11,11 @@ import Art from './pages/Art.jsx';
 import Books from './pages/Books.jsx';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
-import RayTracing from './pages/RayTracing.jsx'
+import RayTracing from './pages/RayTracing.jsx';
+import CNN from './pages/CNN.jsx';
+import MapGenerator from './pages/MapGenerator.jsx';
+import BachelorThesis from './pages/BachelorThesis.jsx';
+
 
 // Components
 import { TiInfoLarge } from 'react-icons/ti';
@@ -68,11 +74,14 @@ const App = () => {
                 <Route path="about" element={<About />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="rayTracing" element={<RayTracing />} />
+                <Route path="cnn" element={<CNN />} />
+                <Route path="bachelorThesis" element={<BachelorThesis />} />
+                <Route path="mapGenerator" element={<MapGenerator />} />
             </Routes>
-            <footer className='bg-orange'>
+            <footer className='bg-footer'>
                 <div className='position-relative h-100 w-100'>
-                    <div className='position-absolute top-50 start-50 translate-middle'>
-                        Copyright by David Burgstaller
+                    <div className='position-absolute top-50 start-50 translate-middle fs-7 fc-footer'>
+                    <FaRegCopyright className='fc-footer pb-1' size={15}/>2023 David Burgstaller. All Rights Reserved.
                     </div>
                 </div>
             </footer>

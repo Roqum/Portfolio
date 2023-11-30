@@ -22,11 +22,20 @@
 .fc-gray800 {
     color: #e7e3da;
 }
+.fc-dark{
+    color: #201E20 !important;
+}
 .opacity-90 {
     opacity: 0.9;
 }
 .fc-orange {
     color: #e7e3da ;
+}
+.fc-footer {
+    color: #6f6f6d ;
+}
+.bg-footer {
+    background-color: #1b1a1b !important;
 }
 .bg-orange {
     background-color: #F2BC58;
@@ -56,6 +65,7 @@
     color: #2e1902 !important;
     font-weight: 500 !important;
 }
+
 .btn-default:hover{
     background-color: #F4D7A1 !important;
     border-radius: 0px !important;

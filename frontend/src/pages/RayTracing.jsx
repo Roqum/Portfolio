@@ -12,14 +12,9 @@ const RayTracing = (props) => {
                 </video>
             </div> 
             <div className="container py-5 px-6 mx-auto bg-gray900 min-vh-100 ">
-                <div className='text-white h3 text-center'>RayTracing!</div>
+                <div className='text-white h3 text-center'>This page is in progress!</div>
                 <div className='text-white'>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et 
-                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                
                 </div>
             </div>
         </>
