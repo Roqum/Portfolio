@@ -32,7 +32,7 @@ function Contact() {
     const sendEmail = (event) => {
         event.preventDefault();
 
-        if(inputs.email != ""|| nputs.email != "") {
+        if(inputs.email != ""|| inputs.email != "") {
             console.log(inputs.email, inputs.message);
             fetch('https://david-burgstaller.com/api/sendMail', {
                 method: "POST",
