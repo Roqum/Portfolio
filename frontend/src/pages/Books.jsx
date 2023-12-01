@@ -16,7 +16,7 @@ function Books() {
     const [books,setBooks]= useState([]);
 
     useEffect(() => {
-        fetch('http://david-burgstaller.com/api/books')
+        fetch('https://david-burgstaller.com/api/books')
             .then(data => data.json())
             .then(json => json.books)
             .then(allBooks => setBooks([...allBooks]))

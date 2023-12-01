@@ -34,7 +34,7 @@ const Home = (props) => {
                     </div>
                     <div className='col-12 d-flex justify-content-center align-items-end'>
                         <div >
-                            <a href="#section02" ><i class="arrow down py-4 px-4 mb-4"></i></a>
+                            <a href="#section02" ><i className="arrow down py-4 px-4 mb-4"></i></a>
                         </div>
                     </div>
                 </div>
