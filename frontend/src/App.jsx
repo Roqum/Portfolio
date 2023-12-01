@@ -47,11 +47,15 @@ const App = () => {
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <Link className="navbar-brand mb-0 h1" to="/" onClick={() => setIsVisible(false)}>David Burgstaller</Link> 
+                        <Link className="navbar-brand mb-0 h1" to="/">David Burgstaller</Link> 
                     <div className="collapse navbar-collapse flex-row-reverse" id="navbarToggleExternalContent">
                         <ul className="navbar-nav">
-                            <li className="nav-item ">
-                            <button  className="btn btn-default w-100" onClick={toggleVisibility}><span className='float-start'><FaCode size={20}/> PROJECTS</span></button>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle btn btn-default w-100" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><span className='float-start'><FaCode size={20}/> PROJECTS</span></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item btn btn-default" href="/coding">Coding</a></li>
+                                    <li><a class="dropdown-item btn btn-default" href="/art">Art</a></li>
+                                </ul>
                             </li>
                             <li className="nav-item ">
                             <Link className="btn btn-default w-100" to="/books"><span className='float-start'><FaBookOpen size={20}/> BOOKS</span></Link>
