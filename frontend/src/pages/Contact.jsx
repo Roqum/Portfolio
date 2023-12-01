@@ -38,7 +38,7 @@ function Contact() {
                 method: "POST",
                 body: JSON.stringify({
                     emailFromAddr: inputs.email,
-                    message: inputs.message
+                    emailMessage: inputs.message
                 }),
                 headers: {
                     "Content-type": "application/json"
