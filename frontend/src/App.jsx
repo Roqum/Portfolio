@@ -52,7 +52,7 @@ const App = () => {
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle btn btn-default w-100" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><span className='float-start'><FaCode size={20}/> PROJECTS</span></a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu bg-orange" aria-labelledby="navbarDropdown">
                                     <li><Link class="dropdown-item btn btn-default" to="/coding">Coding</Link></li>
                                     <li><Link class="dropdown-item btn btn-default" to="/art">Art</Link></li>
                                 </ul>
