@@ -16,8 +16,6 @@ import CNN from './pages/CNN.jsx';
 import MapGenerator from './pages/MapGenerator.jsx';
 import BachelorThesis from './pages/BachelorThesis.jsx';
 
-import ScrollToTop from './components/ScrollToTop.js';
-
 // Components
 import { TiInfoLarge } from 'react-icons/ti';
 import { BiSolidContact } from 'react-icons/bi';
@@ -72,7 +70,6 @@ const App = () => {
                     </div>
             </nav>
             <Routes>
-                <ScrollToTop />
                 <Route path="/" element={<Home visibility={isVisible}/>}/>
                 <Route path="coding" element={<Coding/>} />
                 <Route path="art" element={<Art/>} />
