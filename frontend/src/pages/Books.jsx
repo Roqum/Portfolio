@@ -36,7 +36,7 @@ function Books() {
                 {books?.map(book => 
                     <div className='row fc-gray800 py-3 justify-content-center' key={book.isbn}>
                         <div className='col-9 col-sm-3 mh-100 pb-4'>
-                            <img src={'http://david-burgstaller.com/api/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
+                            <img src={'https://david-burgstaller.com/api/images/' + book.imageName} alt="Clean Code" className="mw-100 container"/>
                         </div>
                         <div className='col-12 col-sm-9 fc-gray800 pb-4'>
                             <div className='row'>

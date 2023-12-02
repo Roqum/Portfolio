@@ -24,8 +24,8 @@ return (
         <div className="container pb-5 px-5 mx-auto fc-gray800 bg-gray900 min-vh-100 ">
             
             <p className='pt-5'>
-                Hi, I'm David—an aspiring game developer driven by a love for programming with an enduring fascination for the artistic 
-                depths of music and visuals within games.
+            Hi, I'm David—an aspiring game developer driven by a love for programming with an enduring fascination for the artistic 
+            depths of music and visuals within games.
             </p>
             <p>
             My journey started in a small village surrounded by an idyllic nature, located in north-central Germany. At the age of 13, 
@@ -33,7 +33,10 @@ return (
             formidable language at that time. Soon, I recognized that game development resonated profoundly with my enthusiasm. The way art, 
             music and coding blend into one masterpiece in so many countless ways just keeps me endlessly fascinating. One year later, in the 
             8th grade of school, my IT course started and my teacher soon realized that I already knew how to program. So, while the other kids 
-            were doomed to learn programming by absolving worksheets, I was allowed to craft my very first game during the IT lessons. 
+            were doomed to learn programming by absolving worksheets, I was allowed to craft my very first game during the IT lessons which got graded
+            at the end. 
+            </p>
+            <p>
             In my free time, I cluelessly started programming more games and experimentally played around with different technologies 
             like DirectX. As my interest grew I stumbled on Unity and Unreal Engine, where my project became increasingly ambitious. 
             It was during this period that I got excited about the artistic aspect of game development. I dedicated a lot of time mastering 
@@ -43,9 +46,14 @@ return (
             <p>
             Unfortunately, my focus naturally shifted after I enrolled at the Goethe University in Frankfurt to pursue IT studies. 
             Out of my need for a balance between mental and physical work, sports gradually claimed a great part of my daily life alongside 
-            my studies. While my pursuit of balance reduced my game development projects, my passion still remained. It turned out that my 
-            studies and concurrent work experiences allowed me to build a solid foundation in programming, enhancing my skills and knowledge 
-            on a bigger scale.
+            my studies. While my pursuit of balance reduced my game development projects, my passion still remained. During my study I always 
+            looked for opertunity to take courses that could be relevant in the gaming industry. I even decided to take some physics courses 
+            although many friends discouraged me from doing so because it was a way more difficult path to take. But I was determined that the 
+            physics classes, especially in mechanics, would serve me better in my future as a game programmer. It turned out that my studies 
+            and concurrent work experiences allowed me to build a solid foundation in math and programming, enhancing my skills and knowledge 
+            on a bigger scale.  
+            It turned out that my studies and concurrent work experiences allowed me to build a solid foundation in math and programming, 
+            enhancing my skills and knowledge on a bigger scale.
             </p>
             <p>
             Coming toward the end of my studies, I plunged myself back into the game development topic by reading books, 
@@ -57,12 +65,14 @@ return (
             I value the space to work on my own; however, I am not one who enjoys working in solitude constantly. I am someone who looks forward to 
             meet his colleagues and friends every morning. So, home office is rather not what I am looking for. As my interest is not in coding alone, 
             I am very excited to work in a team of specialists from different fields. I am a curious person who is finding joy in exploring, learning 
-            and trying new stuff. But I am still ambitious, able to focus on my goals and striving to achieve them. And that's exactly what I am trying 
-            to do with this portfolio right now.
+            and trying new stuff. But I am still ambitious, able to focus on my goals and striving to achieve them. With my great willingness to learn 
+            and deep interest in science, pushing the boundaries of technology thrives me. 
+            I want to be able to enforce the creative freedom of my team by becoming a remarkable programmer. But I won't be able to achieve this alone.
+            With a team and time for collecting experiences and knowledge I am sure I have the potential to become a remarkable programmer.
             </p>
             <p>
-                Thank you for taking the time to learn about me and my passion for game development. I am open for any critique, offers or 
-                conversations; feel free to contact me.
+            Thank you for taking the time to learn about me and my passion for game development. I am open for any critique, offers or 
+            conversations; feel free to contact me.
             </p>
             <br />
 
@@ -70,7 +80,7 @@ return (
             
             <div className='row fc-gray800 pt-5 justify-content-center'>
                 <div className='col-sm-3 col-9 mh-100 pb-4'>
-                    <img src={'http://david-burgstaller.com/api/images/Gothic2.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'https://david-burgstaller.com/api/images/Gothic2.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Gothic 2</span></div>
@@ -86,7 +96,7 @@ return (
             <hr className='hrStyle mt-4 mb-3'/>
             <div className='row fc-gray800 pt-5 justify-content-center'>
                 <div className='col-sm-3 col-9 mh-100 pb-4'>
-                    <img src={'http://david-burgstaller.com/api/images/OriAndTheBlindForest.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'https://david-burgstaller.com/api/images/OriAndTheBlindForest.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Ori and the Blind forest</span></div>
@@ -100,7 +110,7 @@ return (
             <hr className='hrStyle mt-4 mb-3'/> 
             <div className='row fc-gray800 pt-5 justify-content-center'>
                 <div className='col-sm-3 col-9 mh-100 pb-4'>
-                    <img src={'http://david-burgstaller.com/api/images/Civilization.jpg'} alt="Clean Code" className="mw-100 container"/>
+                    <img src={'https://david-burgstaller.com/api/images/Civilization.jpg'} alt="Clean Code" className="mw-100 container"/>
                 </div>
                 <div className='col-sm-9 col-12 fc-gray800 pb-4'>
                         <div className='h5 pb-2'><span className='fc-gray800'>Sid Meier's Civilization</span></div>

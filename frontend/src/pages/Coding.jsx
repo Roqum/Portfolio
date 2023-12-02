@@ -21,10 +21,13 @@ return (
             </div>
             <div className='fc-gray800 py-5'>
                 <p>
-                I like coding. Coding fascinates me because it's like solving riddles. The more brain power the task needs, 
-                the more I am excited about mastering the challenge. Of course, it can be very frustrating at times, but the greater the joy 
-                when it finally works. The ability to craft something entirely new from just lines of code keeps me inspired, especially within 
-                the context of games where this creativity truly shines.
+                I like coding. Coding fascinates me because it's like solving riddles. The more science and brain power is needed, 
+                the more I am excited about mastering the challenge. And the greater the joy when you get a breakthrough after hours, 
+                days or weeks of struggling. I am not afraid of math or complexity. The opposite is true. I love it if scientific approaches 
+                to programming problems become true and I have to push my mind to its limits. Of course, it can be very frustrating at times, 
+                but the greater the joy when I finally grasp the last missing bit and the feeling of surpassing myself. The ability to craft 
+                something entirely new from just lines of code keeps me inspired, especially within the context of games where this 
+                creativity truly shines.
                 </p>
                 <p>
                 In the following list is a collection of some relevant programming projects I did over the last couple of years. 
@@ -38,11 +41,11 @@ return (
             
 
             <div className='row py-0 fc-gray800'>
-                <h4 className='pb-4'>Data Visualization Website (Bechalor Thesis)</h4>
+                <h4 className='pb-4'>Data Visualization Website (Bachelor Thesis)</h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="bachelor" src={"http://david-burgstaller.com/api/images/BachelorThesis.jpg"} 
+                    <img className="mw-100" id="bachelor" src={"https://david-burgstaller.com/api/images/BachelorThesis.jpg"} 
                         onMouseOver={() => changeImage("bachelor", require("../gifs/Bachelor.gif"))} 
-                        onMouseLeave={() => changeImage("bachelor", "http://david-burgstaller.com/api/images/BachelorThesis.jpg")}
+                        onMouseLeave={() => changeImage("bachelor", "https://david-burgstaller.com/api/images/BachelorThesis.jpg")}
                     />
                     <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>Python</span>
@@ -73,9 +76,9 @@ return (
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="raytracing" src={'http://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
+                    <img className="mw-100" id="raytracing" src={'https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
                             onMouseOver={() => changeImage("raytracing", require("../gifs/Raytracing.gif"))} 
-                            onMouseLeave={() => changeImage("raytracing", "http://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
+                            onMouseLeave={() => changeImage("raytracing", "https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
                         />
                     <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange'>Python</span>
@@ -98,9 +101,9 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Configurable Procedural Hextile-map Generator (current project)</h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="mapGenerator" src={"http://david-burgstaller.com/api/images/MapGenerator.jpg"} 
+                    <img className="mw-100" id="mapGenerator" src={"https://david-burgstaller.com/api/images/MapGenerator.jpg"} 
                         onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
-                        onMouseLeave={() => changeImage("mapGenerator", "http://david-burgstaller.com/api/images/MapGenerator.jpg")}
+                        onMouseLeave={() => changeImage("mapGenerator", "https://david-burgstaller.com/api/images/MapGenerator.jpg")}
                     />
                      <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>C#</span>
@@ -123,9 +126,9 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>This Portfolio Website</h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="portfolio" src={"http://david-burgstaller.com/api/images/Portfolio.jpg"} 
+                    <img className="mw-100" id="portfolio" src={"https://david-burgstaller.com/api/images/Portfolio.jpg"} 
                         onMouseOver={() => changeImage("portfolio", require("../gifs/Portfolio.gif"))} 
-                        onMouseLeave={() => changeImage("portfolio","http://david-burgstaller.com/api/images/Portfolio.jpg")}
+                        onMouseLeave={() => changeImage("portfolio","https://david-burgstaller.com/api/images/Portfolio.jpg")}
                     />
                     <div className="mt-2 mb-4">
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
@@ -151,7 +154,7 @@ return (
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" src={"http://david-burgstaller.com/api/images/CNN.jpg"}/>
+                    <img className="mw-100" src={"https://david-burgstaller.com/api/images/CNN.jpg"}/>
                     <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
                     <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
                 </div>

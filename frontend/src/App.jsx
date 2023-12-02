@@ -28,6 +28,7 @@ const App = () => {
     const [isVisible, setIsVisible] = useState(false)
     const location = useLocation();
     const navigate = useNavigate();
+    
 
     const toggleVisibility = () => {
         if (location.pathname != "/") {
@@ -51,19 +52,23 @@ const App = () => {
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle btn btn-default w-100" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><span className='float-start'><FaCode size={20}/> PROJECTS</span></a>
-                                <ul class="dropdown-menu bg-orange" aria-labelledby="navbarDropdown">
-                                    <li><Link class="dropdown-item btn btn-default" to="/coding">Coding</Link></li>
-                                    <li><Link class="dropdown-item btn btn-default" to="/art">Art</Link></li>
+                                <ul className="dropdown-menu bg-orange" aria-labelledby="navbarDropdown">
+                                    <li className='nav-item'>
+                                        <a className="dropdown-item btn btn-default" href="/coding">Coding</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="dropdown-item btn btn-default" href="/art">Art</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li className="nav-item ">
-                            <Link className="btn btn-default w-100" to="/books"><span className='float-start'><FaBookOpen size={20}/> BOOKS</span></Link>
+                            <li className="nav-item">
+                            <a className="btn btn-default w-100" href="/books"><span className='float-start'><FaBookOpen size={20}/> BOOKS</span></a>
                             </li>
-                            <li className="nav-item ">
-                            <Link className="btn btn-default w-100" to="/about"><span className='float-start'><TiInfoLarge size={21}/> ABOUT ME</span></Link>
+                            <li className="nav-item">
+                            <a className="btn btn-default w-100" href="/about"><span className='float-start'><TiInfoLarge size={21}/> ABOUT ME</span></a>
                             </li>
-                            <li className="nav-item ">
-                            <Link className="btn btn-default w-100" to="/contact"><span className='float-start'><BiSolidContact size={20}/> CONTACT</span></Link>
+                            <li className="nav-item">
+                            <a className="btn btn-default w-100" href="/contact"><span className='float-start'><BiSolidContact size={20}/> CONTACT</span></a>
                             </li>
                         </ul>
                     </div>
