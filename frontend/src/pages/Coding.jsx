@@ -23,7 +23,7 @@ return (
                 <p>
                 I like coding. Coding fascinates me because it's like solving riddles. The more science and brain power is needed, 
                 the more I am excited about mastering the challenge. And the greater the joy when you get a breakthrough after hours, 
-                days or weeks of struggling. I am not afraid of math or complexity. The opposite is true. I love it if scientific approaches 
+                days or weeks of struggling. I love it if scientific approaches 
                 to programming problems become true and I have to push my mind to its limits. Of course, it can be very frustrating at times, 
                 but the greater the joy when I finally grasp the last missing bit and the feeling of surpassing myself. The ability to craft 
                 something entirely new from just lines of code keeps me inspired, especially within the context of games where this 
@@ -39,40 +39,54 @@ return (
 
             </div>
             
-
             <div className='row py-0 fc-gray800'>
-                <h4 className='pb-4'>Data Visualization Website (Bachelor Thesis)</h4>
+                <h4 className='pb-4'>Top Down RPG Controll Demo</h4>
                 <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="bachelor" src={"https://david-burgstaller.com/api/images/BachelorThesis.jpg"} 
-                        onMouseOver={() => changeImage("bachelor", require("../gifs/Bachelor.gif"))} 
-                        onMouseLeave={() => changeImage("bachelor", "https://david-burgstaller.com/api/images/BachelorThesis.jpg")}
-                    />
+                    <video autoPlay className='w-75'  muted='true'>
+                        <source src="https://david-burgstaller.com/api/video/TopDownRPG.mp4" type="video/mp4" />
+                    </video>
                     <div className="mt-2 mb-4">
-                        <span className='badge rounded-pill bg-orange me-1'>Python</span>
-                        <span className='badge rounded-pill bg-orange me-1'>React</span>
-                        <span className='badge rounded-pill bg-orange me-1'>Leaflet</span>
-                        <span className='badge rounded-pill bg-orange me-1'>D3js</span>
+                        <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
                     </div>
                 </div>
                 <div className='col-sm-8 col-12'>
                     <p>
-                    This is a website I created for my bachelor thesis project. 
-                    It is a responsive data visualization website with some data mining algorithms to get valuable information out of a big dataset.
+                        After the successfull usage of Godot in the Melon Game Jam 2023 I decided to test the engine even more by
+                        creating a little 3D game. So I created this little demonstration of a character. I used free premade assets 
+                        animated them first by myself but then decided to replace the animation with some free ones from Adobe Mixamo 
+                        otherwise it would take way to long time.  
                     </p>
                     <p>
-                    The data is from the metasearch machine "InfoWeb Weiterbildung (IWWB)". It searches for courses located in German-speaking 
-                    area. My main focus in this visualization was the responsive map where each course is marked. Also, I coded a little 
-                    categorization algorithm to classify the courses in different categories by their titles.
+                        Godot is a pretty strong lightweight engine and fenomenal for 2D games but for 3D games it has still has its limit.
+                        So I decided to leave it as it is and stick with Unreal Engine as I love creating 3D games.
                     </p>
-                    <p>
-                        Live Demo: <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://dashboard.iplus.svc.educs-hosting.net/">https://dashboard.iplus.svc.educs-hosting.net/</a>
-                    </p>
+                </div>
+                <hr className='hrStyle my-5'/>
+            </div>
 
-                    <a className="align-bottom bg-orange btn btn-primary" href="\bachelorThesis">See more</a>
+            <div className='row py-0 fc-gray800'>
+                <h4 className='pb-4'>Charming Hell (3 Day Gamejam)</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" id="charmingHell" src={"https://david-burgstaller.com/api/images/CharmingHell.jpg"}
+                    />
+                    <div className="mt-2 mb-4">
+                        <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                        This game my submission to the Melon Game Jam 2023 with the chosen theme "CHARM". I created this prototype in 3 days 
+                        even though I haven't used the Godot Engine before. To my suprise it worked out quite well and Godot was easy to get used
+                        to. It is a great engine with a big potential for the future.
+                    </p>
+                    <p>
+                        You can play the original version of my submission here: https://roqum.itch.io/charming-hell
+                    </p>
 
                 </div>
                 <hr className='hrStyle my-5'/>
             </div>
+
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
                 <div className='col-sm-4 col-12'>
