@@ -55,11 +55,13 @@ return (
             difficult path to take. But I was determined that the physics classes, especially in mechanics, would serve me better in my 
             future as a game programmer.
             </p>
+            <p>
             In my work as a fullstack software developer I was given a lot of freedom to express myself. I was allowed to challenge myself 
             and took on tasks that I had never done before. In particular, my own implementation of a concurrent programming solution to 
             improve the efficiency of server calculations will serve me as valuable experience. <br></br>
             But with my finished bachelor's degree and some work experience as a software developer, I think it is now time to take a new step 
             and advance my dream as a programmer in the game industry.
+            </p>
             <p>
             My friends describe me as a reserved person with a soothing demeanor, creating an atmosphere where others feel at ease. As an introvert, 
             I value the space to work on my own; however, I am not one who enjoys working in solitude constantly. I am someone who looks forward to 
