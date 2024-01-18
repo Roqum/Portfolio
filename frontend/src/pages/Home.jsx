@@ -42,19 +42,20 @@ const Home = (props) => {
             <div id="section02" className="py-4 px-5 mx-auto w-100 bg-gray900 container">
                 <div className="bg-gray900 h-100">
                     <div className="fc-gray800 mw-100">
-                        <h4 className='text-center fc-orange py-4'>About Me!</h4>
+                        <h4 className='text-center fc-orange py-4'>My Motivation!</h4>
                         <p className='text-center'>
                         I love the challenges of programming, pushing the boundaries of technology to find efficient solutions so that your team is able to 
                         craft new immersive worlds out of nothing. To work as a team and build a world 
                         filled with life through music, art and technology, fascinates me. Even so, I would love to compose the music, 
                         draw the art and program the game all by myself, I know that this is too ambitious. My lifetime is too short to 
-                        master all of these skills. Luckily, I don't have to. We humans are not ment to do everything on our own, we need each 
-                        other to accomplish great things. I am sure that there are plenty of people who can create better artworks, music and 
-                        stories than me. So I want to find these people and contribute my programming skills to bring their art, music and 
-                        stories alife.
+                        master all of these skills. Luckily, I don't have to. We humans are not ment to do everything on our own. Together we can 
+                        accomplish far great things. I am sure that there are plenty of people who can create better artworks, music and 
+                        stories than me. But I am also sure that there also plenty of people who are not able to bring theire artwork, music and storie alive. 
+                        Thats the skill I can contribute to the team. Exactly that is what I love in game development. Working as a team and enchance each others strenght to
+                        craft an entire new world out of creativity. It is a masterpiece of science, music and art created by multiple people and for the whole world to enjoy it.
                         </p>
                         <p className='text-center'>
-                        If you want to read my story you can have a look here
+                        You can read more about me and my story here.
                         </p>
                         <div className='text-center'>
                         <a className="bg-orange btn btn-primary mx-2 px-1 py-1" href="\about">Read more</a>

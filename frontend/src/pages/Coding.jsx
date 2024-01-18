@@ -21,19 +21,16 @@ return (
             </div>
             <div className='fc-gray800 py-5'>
                 <p>
-                I like coding. Coding fascinates me because it's like solving riddles. The more science and brain power is needed, 
+                I like coding. Coding is like solving a web of riddles. The more science and brain power is needed, 
                 the more I am excited about mastering the challenge. And the greater the joy when you get a breakthrough after hours, 
-                days or weeks of struggling. I love it if scientific approaches 
-                to programming problems become true and I have to push my mind to its limits. Of course, it can be very frustrating at times, 
+                days or weeks of struggling. I love to deep dive into topics and push my mind to its limit for finding an efficient solution. 
+                Of course, it can be very frustrating at times, 
                 but the greater the joy when I finally grasp the last missing bit and the feeling of surpassing myself. The ability to craft 
                 something entirely new from just lines of code keeps me inspired, especially within the context of games where this 
                 creativity truly shines.
                 </p>
                 <p>
-                In the following list is a collection of some relevant programming projects I did over the last couple of years. 
-                Unfortunately, I was unable to recover my game projects from my school days as they were lost over the years. 
-                My highlights during this time were a simple spaceship Shoot 'em up game, a recreation of the game Bomberman and the classical 
-                game Pong programmed with DirectX.
+                    In the following list you find some project I worked on over the last years.
                 </p>
                 <hr className='hrStyle mt-5 mb-5'/>
 
@@ -42,7 +39,7 @@ return (
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Top Down RPG Controll Demo</h4>
                 <div className='col-sm-4 col-12'>
-                    <video autoPlay className='w-75'  muted='true'>
+                    <video autoPlay className='w-100' muted='true' loop>
                         <source src="https://david-burgstaller.com/api/video/TopDownRPG.mp4" type="video/mp4" />
                     </video>
                     <div className="mt-2 mb-4">
@@ -51,14 +48,14 @@ return (
                 </div>
                 <div className='col-sm-8 col-12'>
                     <p>
-                        After the successfull usage of Godot in the Melon Game Jam 2023 I decided to test the engine even more by
-                        creating a little 3D game. So I created this little demonstration of a character. I used free premade assets 
-                        animated them first by myself but then decided to replace the animation with some free ones from Adobe Mixamo 
-                        otherwise it would take way to long time.  
+                    After the successful usage of Godot in the Melon Game Jam 2023 I decided to test the engine even more by 
+                    creating a little 3D game. So I created this little demonstration of a character. I used free pre-made assets 
+                    and animated them first by myself, but then decided to replace the animation with some free ones from Adobe 
+                    Mixamo. Otherwise, it would take way too long.
                     </p>
                     <p>
-                        Godot is a pretty strong lightweight engine and fenomenal for 2D games but for 3D games it has still has its limit.
-                        So I decided to leave it as it is and stick with Unreal Engine as I love creating 3D games.
+                    Godot is a pretty strong lightweight engine and phenomenal for 2D games, but for 3D games it still has its 
+                    limits. So I decided to leave this project as it is and stick with Unreal Engine as I love creating 3D games.
                     </p>
                 </div>
                 <hr className='hrStyle my-5'/>
@@ -75,12 +72,15 @@ return (
                 </div>
                 <div className='col-sm-8 col-12'>
                     <p>
-                        This game my submission to the Melon Game Jam 2023 with the chosen theme "CHARM". I created this prototype in 3 days 
-                        even though I haven't used the Godot Engine before. To my suprise it worked out quite well and Godot was easy to get used
-                        to. It is a great engine with a big potential for the future.
+                    This game is my submission to the Melon Game Jam 2023 with the chosen theme "CHARM". I created this prototype in 3 
+                    days even though I hadn't used the Godot Engine before. To my surprise, it worked out quite well and Godot was easy 
+                    to get used to. It is a great engine with a big potential for the future
                     </p>
                     <p>
-                        You can play the original version of my submission here: https://roqum.itch.io/charming-hell
+                    You can play the original version of my submission here: 
+                    <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://roqum.itch.io/charming-hell">
+                        https://roqum.itch.io/charming-hell
+                    </a>
                     </p>
 
                 </div>
@@ -134,6 +134,38 @@ return (
                     </p>
                     <a className="align-bottom bg-orange btn btn-primary" href="\mapGenerator">See more</a>
                 </div>
+                <hr className='hrStyle my-5'/>
+            </div>
+
+            <div className='row pt-5 fc-gray800'>
+                <h4 className='pb-4'>Data Visualization Website (Bachelor Thesis)</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" id="bachelor" src={"https://david-burgstaller.com/api/images/BachelorThesis.jpg"} 
+                        onMouseOver={() => changeImage("bachelor", require("../gifs/Bachelor.gif"))} 
+                        onMouseLeave={() => changeImage("bachelor", "https://david-burgstaller.com/api/images/BachelorThesis.jpg")}
+                    />
+                    <div className="mt-2 mb-4">
+                        <span className='badge rounded-pill bg-orange me-1'>Python</span>
+                        <span className='badge rounded-pill bg-orange me-1'>React</span>
+                        <span className='badge rounded-pill bg-orange me-1'>Leaflet</span>
+                        <span className='badge rounded-pill bg-orange me-1'>D3js</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                        This is a website I created for my bachelor thesis project. 
+                        It is a responsive data visualization website with some data mining algorithms to get valuable information out of a big dataset.
+                    </p> 
+                    <p>
+                        The data is from the metasearch machine "InfoWeb Weiterbildung (IWWB)". It searches for courses located in German-speaking 
+                        area. My main focus in this visualization was the responsive map where each course is marked. Also, I coded a little 
+                        categorization algorithm to classify the courses in different categories by their titles.
+                    </p>
+                    <p>
+                        Live Demo: <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://dashboard.iplus.svc.educs-hosting.net/">https://dashboard.iplus.svc.educs-hosting.net/</a>
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary" href="https://github.com/Roqum/Bachelorarbeit_Dashboard">Source Code</a>
+                </div>        
                 <hr className='hrStyle my-5'/>
             </div>
 

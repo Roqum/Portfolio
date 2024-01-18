@@ -24,55 +24,56 @@ return (
         <div className="container pb-5 px-5 mx-auto fc-gray800 bg-gray900 min-vh-100 ">
             
             <p className='pt-5'>
-            Hi, I'm David—an aspiring game developer driven by a love for programming with an enduring fascination for the artistic 
+            Hi, I'm David, a game developer driven by a love for programming with an enduring fascination for the artistic 
             depths of music and visuals within games.
             </p>
             <p>
             My journey started in a small village surrounded by an idyllic nature, located in north-central Germany. At the age of 13, 
             inspired by my cousin, my passion for programming began. I took on the challenge of mastering C++, which I considered the most 
             formidable language at that time. Soon, I recognized that game development resonated profoundly with my enthusiasm. The way art, 
-            music and coding blend into one masterpiece in so many countless ways just keeps me endlessly fascinating. One year later, in the 
-            8th grade of school, my IT course started and my teacher soon realized that I already knew how to program. So, while the other kids 
-            were doomed to learn programming by absolving worksheets, I was allowed to craft my very first game during the IT lessons which got graded
-            at the end. 
+            music and coding blend into one masterpiece in so many countless ways just keeps me endlessly fascinating.
             </p>
             <p>
-            In my free time, I cluelessly started programming more games and experimentally played around with different technologies 
-            like DirectX. As my interest grew I stumbled on Unity and Unreal Engine, where my project became increasingly ambitious. 
-            It was during this period that I got excited about the artistic aspect of game development. I dedicated a lot of time mastering 
-            tools like Blender and Photoshop. This creative exploration not only broadened my understanding of esthetics but also ignited my 
-            fascination for games even more.
+            One year later, in the 8th grade of school, my IT course started and my teacher soon realized that I already knew how to program. 
+            So, while the other kids 
+            were doomed to learn programming by absolving worksheets, I was allowed to craft my very first astroids like game during the IT lessons.
+            Immediately after that, as a team of four students, I created my second game, a classic bomberman game. In my free time, I plunged myself 
+            into all aspects of game development. I learned to program with DirectX and created a pong game, used Blender to modell and sculpt 
+            multiple assets, which I used to craft an entire world inside the Cryengine. Lastly, I explored all about the theory behind visual 
+            esthetics and the practical usage of Photoshop to enhance the appeal of my self-drawn pictures and UI elements. And during all that time, 
+            I played tons of games with my school friends.
             </p>
+
             <p>
-            Unfortunately, my focus naturally shifted after I enrolled at the Goethe University in Frankfurt to pursue IT studies. 
-            Out of my need for a balance between mental and physical work, sports gradually claimed a great part of my daily life alongside 
-            my studies. While my pursuit of balance reduced my game development projects, my passion still remained. During my study I always 
-            looked for opertunity to take courses that could be relevant in the gaming industry. I even decided to take some physics courses 
-            although many friends discouraged me from doing so because it was a way more difficult path to take. But I was determined that the 
-            physics classes, especially in mechanics, would serve me better in my future as a game programmer. It turned out that my studies 
-            and concurrent work experiences allowed me to build a solid foundation in math and programming, enhancing my skills and knowledge 
-            on a bigger scale.  
+            After my one volunteer year as a football coach in Thailand, I came back with a lot of life, team-building and cultural awareness 
+            experience. I was ready to encounter a new challenge in my life and start my Computer Science studies at the university. I had to 
+            move away from my hometown and family and start a new chapter alone in Frankfurt. Fortunately, I settled down very well and 
+            Frankfurt felt like my home soon. 
             It turned out that my studies and concurrent work experiences allowed me to build a solid foundation in math and programming, 
-            enhancing my skills and knowledge on a bigger scale.
+            enhancing my skills and knowledge on a bigger scale. 
+            I even decided to take some physics courses although many friends discouraged me from doing so because it was a way more 
+            difficult path to take. But I was determined that the physics classes, especially in mechanics, would serve me better in my 
+            future as a game programmer.
             </p>
-            <p>
-            Coming toward the end of my studies, I plunged myself back into the game development topic by reading books, 
-            watching videos and programming games once again. I am looking forward to start my career as a game programmer in the industry now 
-            and try to prepare myself as good as possible for this upcoming step.
-            </p>
+            In my work as a fullstack software developer I was given a lot of freedom to express myself. I was allowed to challenge myself 
+            and took on tasks that I had never done before. In particular, my own implementation of a concurrent programming solution to 
+            improve the efficiency of server calculations will serve me as valuable experience. <br></br>
+            But with my finished bachelor's degree and some work experience as a software developer, I think it is now time to take a new step 
+            and advance my dream as a programmer in the game industry.
             <p>
             My friends describe me as a reserved person with a soothing demeanor, creating an atmosphere where others feel at ease. As an introvert, 
             I value the space to work on my own; however, I am not one who enjoys working in solitude constantly. I am someone who looks forward to 
-            meet his colleagues and friends every morning. So, home office is rather not what I am looking for. As my interest is not in coding alone, 
+            meet his colleagues and friends every morning. As my interest is not in coding alone, 
             I am very excited to work in a team of specialists from different fields. I am a curious person who is finding joy in exploring, learning 
             and trying new stuff. But I am still ambitious, able to focus on my goals and striving to achieve them. With my great willingness to learn 
             and deep interest in science, pushing the boundaries of technology thrives me. 
             I want to be able to enforce the creative freedom of my team by becoming a remarkable programmer. But I won't be able to achieve this alone.
-            With a team and time for collecting experiences and knowledge I am sure I have the potential to become a remarkable programmer.
+            With a team and time for collecting experiences and knowledge I am sure I have the potential to become one of the best programmer.
             </p>
             <p>
             Thank you for taking the time to learn about me and my passion for game development. I am open for any critique, offers or 
-            conversations; feel free to contact me.
+            conversations; feel free to contact me 
+            <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href= "/contact">here</a>.
             </p>
             <br />
 
