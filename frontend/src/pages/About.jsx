@@ -58,7 +58,9 @@ return (
             <p>
             In my work as a fullstack software developer I was given a lot of freedom to express myself. I was allowed to challenge myself 
             and took on tasks that I had never done before. In particular, my own implementation of a concurrent programming solution to 
-            improve the efficiency of server calculations will serve me as valuable experience. <br></br>
+            improve the efficiency of server calculations will serve me as valuable experience. 
+            </p>
+            <p>
             But with my finished bachelor's degree and some work experience as a software developer, I think it is now time to take a new step 
             and advance my dream as a programmer in the game industry.
             </p>
@@ -74,8 +76,7 @@ return (
             </p>
             <p>
             Thank you for taking the time to learn about me and my passion for game development. I am open for any critique, offers or 
-            conversations; feel free to contact me 
-            <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href= "/contact">here</a>.
+            conversations; feel free to contact me <a className='link-underline-opacity-50 link-light link-underline-opacity-75-hover' href="/contact">here</a>.
             </p>
             <br />
 

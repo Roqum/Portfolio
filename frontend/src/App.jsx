@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route, useLocation, useNavigate} from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { FaRegCopyright } from "react-icons/fa";
-
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 
 // Rounting Pages
 import Home from './pages/Home.jsx';
@@ -87,10 +87,31 @@ const App = () => {
                 <Route path="mapGenerator" element={<MapGenerator />} />
             </Routes>
             <footer className='bg-footer'>
-                <div className='position-relative h-100 w-100'>
-                    <div className='position-absolute top-50 start-50 translate-middle fs-7 fc-footer'>
-                    <FaRegCopyright className='fc-footer pb-1' size={15}/>2023 David Burgstaller. All Rights Reserved.
+                <div className='h-100 w-100'>
+                    <div className='row'>
+                        <div className='col-12 opacity-0'>
+                            text
+                        </div>
                     </div>
+                        <div className='row fs-7 fc-footer'>
+                            <div className='col-4 ms-5'>
+                                <a className='fc-footer' href="https://github.com/Roqum">
+                                    <FaGithub className='mx-1' size={25}/>
+                                </a>
+                                <a className='fc-footer' href="www.linkedin.com/in/david-burgstaller">
+                                    <FaLinkedin className='mx-1' size={25}/>
+                                </a> 
+
+                            </div>
+                            <div className='col-4 text-center'>
+                                <FaRegCopyright className='fc-footer pb-1' size={15}/>2023 David Burgstaller. All Rights Reserved.
+
+                            </div>
+                            <div className='col-4'>
+
+                            </div>
+
+                        </div>
                 </div>
             </footer>
       </div>
