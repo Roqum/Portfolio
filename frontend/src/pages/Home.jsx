@@ -40,9 +40,26 @@ const Home = (props) => {
                 </div>
             </div>
             <div id="section02" className="py-4 px-5 mx-auto w-100 bg-gray900 container">
+                <div className="fc-gray800 mw-100">
+                    <h3 className='text-center fc-orange pb-4 pt-5'>About Me!</h3>
+                    <p className='text-center'>
+                        A game programmer freshly graduated in Computer Science with 1,5 years experience working as a software developer and several finished projects in the meantime.
+                        With one published game on Itch.io, two published websites and the knowledge of several books in my pocket, I am currently working full-time on getting into the realm of Unreal Engine 5. <br />
+                        Self-driven, hardworking and a balanced personality allowing me to adapt and contribute to a positive team culture.
+                    </p>
+                    <p className='text-center mt-5'>
+                        <h5>Projects:</h5>
+                    </p>
+                        <div className='text-center'>
+                            <a className="bg-orange btn btn-primary mx-1 px-1 py-1" href="\coding">Coding</a>
+                            <a className="bg-orange btn btn-primary mx-1 px-1 py-1" href="\art">Art</a>
+                        </div>
+                </div>
+                <hr className='hrStyle mt-5'/>
+                    
                 <div className="bg-gray900 h-100">
                     <div className="fc-gray800 mw-100">
-                        <h4 className='text-center fc-orange py-4'>My Motivation!</h4>
+                        <h3 className='text-center fc-orange py-4'>My Motivation!</h3>
                         <p className='text-center'>
                         I love the challenges of programming, pushing the boundaries of technology to find efficient solutions so that your team is able to 
                         craft new immersive worlds out of nothing. To work as a team and build a world 
@@ -61,37 +78,6 @@ const Home = (props) => {
                         <a className="bg-orange btn btn-primary mx-2 px-1 py-1" href="\about">Read more</a>
                         </div>
 
-                    </div>
-                </div>
-                <hr className='hrStyle mt-5'/>
-                <div className="bg-gray900 h-100">
-                    <div className="fc-gray800 mw-100">
-                        <h4 className='text-center fc-orange pb-4 pt-5'>Projects!</h4>
-                        <p className='text-center'>
-                        I started programming when I was 13 and with 14 I programmed my first small astroids game during my IT classes in school. 
-                        After that my passion for game development ignited. I started to program with DirectX, modelled worlds with Blender and the
-                        Cryengine and read books about programming. As my IT study started abd took up a lot of time my projects got less but my passion remained.
-                        Now after I finished my bachelor I created this portfolio to show my future work and my path as a game programmer.
-                        </p>
-                        <p className='text-center'>
-                            You can find more details about my programming projects here
-                        </p>
-                        <div className='text-center'>
-                        <a className="bg-orange btn btn-primary mx-2 mb-5 px-1 py-1" href="\coding">Coding</a>
-                        </div>
-                        <p className='text-center'>
-                        My interest is not in coding alone, even though it is clearly my focus. 
-                        Artworks, especially in the gaming industry, fascinates me. So I couldn't resist trying it myself 
-                        and did some modeling and digital painting projects. Actually, I would really love to try music composing 
-                        as well if I could, but programming and art is already time-consuming enough, so I never took the chance. 
-                        Okay, actually I tried it as well, but just a little bit.                      
-                        </p>
-                        <p className='text-center'>
-                            And you can see some of my artistic attempts here 
-                        </p>
-                        <div className='text-center'>
-                        <a className="bg-orange btn btn-primary mx-2 px-1 py-1" href="\art">Art</a>
-                        </div>
                     </div>
                 </div>
             </div>

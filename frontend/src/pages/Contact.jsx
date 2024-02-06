@@ -3,6 +3,8 @@ import "../scss/Contact.scss";
 import {BsSend} from 'react-icons/bs';
 import { MdOutlineMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
+
 
 
 
@@ -96,9 +98,29 @@ function Contact() {
                         </p>
                         </div>
                     </div>
+                    <div className='row'>
+                        <div className='col-1'>
+                            <FaLinkedin className="mb-2 fc-gray800" size={30}/>
+                        </div>
+                        <div className='col-11'>
+                        <p className='fc-gray800 fs-6'>
+                            <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://linkedin.com/in/david-burgstaller">linkedin.com/in/david-burgstaller</a>
+                        </p>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-1'>
+                            <FaGithub className="mb-2 fc-gray800" size={30}/>
+                        </div>
+                        <div className='col-11'>
+                        <p className='fc-gray800 fs-6'>
+                            <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://github.com/Roqum">github.com/Roqum</a>
+                        </p>
+                        </div>
+                    </div>
                     <br />
-                    <p className='fc-gray800'>
-                        Use my email or following form to write me a message.
+                    <p className='fc-gray800 mt-3'>
+                        You can immediately send me an email here:
                     </p>
                     <br />
                     <form className='fc-gray800 needs-validation' onSubmit={sendEmail}>

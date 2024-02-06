@@ -47,13 +47,14 @@ return (
             <p>
             After my one volunteer year as a football coach in Thailand, I came back with a lot of life, team-building and cultural awareness 
             experience. I was ready to encounter a new challenge in my life and start my Computer Science studies at the university. I had to 
-            move away from my hometown and family and start a new chapter alone in Frankfurt. Fortunately, I settled down very well and 
+            move away from my hometown and family to start a new chapter alone in Frankfurt. Fortunately, I settled down very well and 
             Frankfurt felt like my home soon. 
             It turned out that my studies and concurrent work experiences allowed me to build a solid foundation in math and programming, 
             enhancing my skills and knowledge on a bigger scale. 
-            I even decided to take some physics courses although many friends discouraged me from doing so because it was a way more 
-            difficult path to take. But I was determined that the physics classes, especially in mechanics, would serve me better in my 
-            future as a game programmer.
+            I picked modules that will provide me with valuable knowledge 
+            for my upcoming career, like "Computer Graphics", "AI Methodes" and "Modulation and Simulation". I even finished some phyik modules 
+            that would benefit me in engine/game mathematics, like "Mechanics" and "Theoretical Mechanics".
+            During all of that time, I kept reading several books to get a better grasp of the overall concepts in professional game development.
             </p>
             <p>
             In my work as a fullstack software developer I was given a lot of freedom to express myself. I was allowed to challenge myself 

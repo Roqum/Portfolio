@@ -98,7 +98,7 @@ const App = () => {
                                 <a className='fc-footer' href="https://github.com/Roqum">
                                     <FaGithub className='mx-1' size={25}/>
                                 </a>
-                                <a className='fc-footer' href="www.linkedin.com/in/david-burgstaller">
+                                <a className='fc-footer' href="https://linkedin.com/in/david-burgstaller">
                                     <FaLinkedin className='mx-1' size={25}/>
                                 </a> 
 
