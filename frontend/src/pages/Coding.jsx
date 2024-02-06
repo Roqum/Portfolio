@@ -21,19 +21,44 @@ return (
             </div>
             <div className='fc-gray800 py-5'>
                 <p>
-                I like coding. Coding is like solving a web of riddles. The more science and brain power is needed, 
-                the more I am excited about mastering the challenge. And the greater the joy when you get a breakthrough after hours, 
-                days or weeks of struggling. I love to deep dive into topics and push my mind to its limit for finding an efficient solution. 
-                Of course, it can be very frustrating at times, 
-                but the greater the joy when I finally grasp the last missing bit and the feeling of surpassing myself. The ability to craft 
-                something entirely new from just lines of code keeps me inspired, especially within the context of games where this 
-                creativity truly shines.
+                I started coding when I was thirteen. At the age of fourteen, I programmed my first game during my IT classes in middle school while the other students had to learn how to code in the meantime. 
+                Soon after that as a team of 4 students, we developed my second game, a Bombermann replica. Coding is a part of me and surly a skill I posses. I am eager to advance my skills and become a remarkable 
+                programmer so that one day I will be able to lead other people to become great programmers aswell.
                 </p>
                 <p>
-                    In the following list you find some project I worked on over the last years.
+                In the following list you find some project I worked on over the last years.
                 </p>
                 <hr className='hrStyle mt-5 mb-5'/>
 
+            </div>
+
+            <div className='row py-0 fc-gray800'>
+                <h4 className='pb-4'>Charming Hell (3 Day Gamejam)</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" id="charmingHell" src={"https://david-burgstaller.com/api/images/CharmingHell.jpg"}
+                    />
+                    <div className="mt-2 mb-4">
+                    <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
+                    <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    This game is my submission to the Melon Game Jam 2023 with the chosen theme "CHARM". I created this prototype in 3 
+                    days even though I hadn't used the Godot Engine before. To my surprise, it worked out quite well and Godot was easy 
+                    to get used to. It is a great engine with a big potential for the future.
+                    </p>
+                    <p>
+                    <a className='bg-orange btn btn-primary mx-1 px-1 py-1' href="https://roqum.itch.io/charming-hell">
+                        Play Game
+                    </a>
+                    <a className='bg-orange btn btn-primary mx-1 px-1 py-1' href="https://github.com/Roqum/CharmingHell_3DayGameJam">
+                        Source Code
+                    </a>
+                    </p>
+
+                </div>
+                <hr className='hrStyle my-5'/>
             </div>
             
             <div className='row py-0 fc-gray800'>
@@ -43,6 +68,7 @@ return (
                         <source src="https://david-burgstaller.com/api/video/TopDownRPG.mp4" type="video/mp4" />
                     </video>
                     <div className="mt-2 mb-4">
+                        <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
                         <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
                     </div>
                 </div>
@@ -61,31 +87,6 @@ return (
                 <hr className='hrStyle my-5'/>
             </div>
 
-            <div className='row py-0 fc-gray800'>
-                <h4 className='pb-4'>Charming Hell (3 Day Gamejam)</h4>
-                <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="charmingHell" src={"https://david-burgstaller.com/api/images/CharmingHell.jpg"}
-                    />
-                    <div className="mt-2 mb-4">
-                        <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
-                    </div>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    This game is my submission to the Melon Game Jam 2023 with the chosen theme "CHARM". I created this prototype in 3 
-                    days even though I hadn't used the Godot Engine before. To my surprise, it worked out quite well and Godot was easy 
-                    to get used to. It is a great engine with a big potential for the future
-                    </p>
-                    <p>
-                    You can play the original version of my submission here: 
-                    <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://roqum.itch.io/charming-hell">
-                        https://roqum.itch.io/charming-hell
-                    </a>
-                    </p>
-
-                </div>
-                <hr className='hrStyle my-5'/>
-            </div>
 
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
@@ -95,6 +96,7 @@ return (
                             onMouseLeave={() => changeImage("raytracing", "https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
                         />
                     <div className="mt-2 mb-4">
+                    <span className='badge rounded-pill bg-date-badge me-1'>2020</span>
                         <span className='badge rounded-pill bg-orange'>Python</span>
                     </div>
                 </div>
@@ -111,28 +113,50 @@ return (
             </div>
             <hr className='hrStyle my-5'/>
 
+            <div className='row pt-5 fc-gray800'>
+                <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" src={"https://david-burgstaller.com/api/images/CNN.jpg"}/>
+                    <span className='badge rounded-pill bg-date-badge me-1'>2019</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    As a part of an university project, we received a big dataset from a particle accelerator. 
+                    The data contains information about the collision of particles. In some of these collisions, Quark-Gluon-Plasma (QGP) emerged 
+                    but in some it doesn't. In a team of three students, our task was to develop a convolutional neural network which has to detect 
+                    if QGP has emerged, or it has not emerged by just receiving the collision data.
+                    
+                         
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary" href="\cnn">See more</a>
+                </div>
+                <hr className='hrStyle my-5'/>
+            </div>
 
             <div className='row pt-5 fc-gray800'>
-                <h4 className='pb-4'>Configurable Procedural Hextile-map Generator (current project)</h4>
+                <h4 className='pb-4'>Configurable Procedural Hextile-map Generator</h4>
                 <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="mapGenerator" src={"https://david-burgstaller.com/api/images/MapGenerator.jpg"} 
                         onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
                         onMouseLeave={() => changeImage("mapGenerator", "https://david-burgstaller.com/api/images/MapGenerator.jpg")}
                     />
                      <div className="mt-2 mb-4">
+                     <span className='badge rounded-pill bg-date-badge me-1'>2022</span>
                         <span className='badge rounded-pill bg-orange me-1'>C#</span>
                         <span className='badge rounded-pill bg-orange me-1'>Unity</span>
                     </div>
                 </div>
                 <div className='col-sm-8 col-12'>
                     <p>
-                    This is the current project I am working on. Actually, I want to code a little strategic game and thought a configurable 
-                    map-tile generator would be great to test how the map could look like.
+                    With this little project my goal was to get to know the Unity engine and to learn more about procedural generation inside of games.
                     </p>
                     <p>
-                    I just started this project not long ago, so the rest of the game is coming soon. 
+                    I wrote a script which is drawing the vertices and polygons of a single hexagon-tile. A map generator draws multiple of these hexagons and assigns each of them
+                    a type randomly using perlin noise. The types should refer to "water", "grass" and "forest". Together they would form a world for a strategy game.
                     </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="\mapGenerator">See more</a>
+                    <a className="align-bottom bg-orange btn btn-primary" href="https://github.com/Roqum/Precedural_HextileMap_Generator">Source Code</a>
                 </div>
                 <hr className='hrStyle my-5'/>
             </div>
@@ -145,6 +169,7 @@ return (
                         onMouseLeave={() => changeImage("bachelor", "https://david-burgstaller.com/api/images/BachelorThesis.jpg")}
                     />
                     <div className="mt-2 mb-4">
+                    <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
                         <span className='badge rounded-pill bg-orange me-1'>Python</span>
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
                         <span className='badge rounded-pill bg-orange me-1'>Leaflet</span>
@@ -177,6 +202,7 @@ return (
                         onMouseLeave={() => changeImage("portfolio","https://david-burgstaller.com/api/images/Portfolio.jpg")}
                     />
                     <div className="mt-2 mb-4">
+                    <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
                         <span className='badge rounded-pill bg-orange me-1'>React</span>
                         <span className='badge rounded-pill bg-orange me-1'>C++</span>
                     </div>
@@ -197,26 +223,6 @@ return (
                 <hr className='hrStyle my-5'/>
             </div>
             
-            <div className='row pt-5 fc-gray800'>
-                <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
-                <div className='col-sm-4 col-12'>
-                    <img className="mw-100" src={"https://david-burgstaller.com/api/images/CNN.jpg"}/>
-                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
-                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    As a part of an university project, we received a big dataset from a particle accelerator. 
-                    The data contains information about the collision of particles. In some of these collisions, Quark-Gluon-Plasma (QGP) emerged 
-                    but in some it doesn't. In a team of three students, our task was to develop a convolutional neural network which has to detect 
-                    if QGP has emerged, or it has not emerged by just receiving the collision data.
-                    
-                         
-                    </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="\cnn">See more</a>
-                </div>
-                <hr className='hrStyle my-5'/>
-            </div>
 
         </div>
     </>
