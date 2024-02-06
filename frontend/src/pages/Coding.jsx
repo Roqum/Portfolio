@@ -60,7 +60,84 @@ return (
                 </div>
                 <hr className='hrStyle my-5'/>
             </div>
-            
+
+            <div className='row pt-5 fc-gray800'>
+                <h4 className='pb-4'>Configurable Procedural Hextile-map Generator</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" id="mapGenerator" src={"https://david-burgstaller.com/api/images/MapGenerator.jpg"} 
+                        onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
+                        onMouseLeave={() => changeImage("mapGenerator", "https://david-burgstaller.com/api/images/MapGenerator.jpg")}
+                    />
+                     <div className="mt-2 mb-4">
+                     <span className='badge rounded-pill bg-date-badge me-1'>2022</span>
+                        <span className='badge rounded-pill bg-orange me-1'>C#</span>
+                        <span className='badge rounded-pill bg-orange me-1'>Unity</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    With this little project my goal was to get to know the Unity engine and to learn more about procedural generation inside of games.
+                    </p>
+                    <p>
+                    I wrote a script which is drawing the vertices and polygons of a single hexagon-tile. A map generator draws multiple of these hex-tile and assigns each of them
+                    a type randomly using perlin noise. The types should refer to "deep water", "water", "mountain", "grass" and "forest". Together they form a world for a strategy game.
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="\mapGenerator">Demo Videos</a>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://github.com/Roqum/Precedural_HextileMap_Generator">Source Code</a>
+                </div>
+                <hr className='hrStyle my-5'/>
+            </div>
+
+            <div className='row pt-5 fc-gray800'>
+                <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" src={"https://david-burgstaller.com/api/images/CNN.jpg"}/>
+                    <span className='badge rounded-pill bg-date-badge me-1'>2019</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
+                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    As a part of an university project, we received a big dataset from a particle accelerator. 
+                    The data contains information about the collision of particles. In some of these collisions, Quark-Gluon-Plasma (QGP) emerged 
+                    but in some it doesn't. In a team of three students, our task was to develop a convolutional neural network which has to detect 
+                    if QGP has emerged, or it has not emerged by just receiving the collision data.
+                    </p>
+                    <p>
+                    <b>Unfortunately, back then we had no experience with git so the repository is pretty dirty.</b>
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://www.mdpi.com/1999-4893/16/7/344/pdf">Article</a>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://github.com/Roqum/Milestone3/tree/master/CNN_Leon">Source Code</a>
+                </div>
+                <hr className='hrStyle my-5'/>
+            </div>
+
+            <div className='row py-0 fc-gray800'>
+                <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console</h4>
+                <div className='col-sm-4 col-12'>
+                    <img className="mw-100" id="raytracing" src={'https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
+                            onMouseOver={() => changeImage("raytracing", require("../gifs/Raytracing.gif"))} 
+                            onMouseLeave={() => changeImage("raytracing", "https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
+                        />
+                    <div className="mt-2 mb-4">
+                    <span className='badge rounded-pill bg-date-badge me-1'>2020</span>
+                        <span className='badge rounded-pill bg-orange'>Python</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    In this project I used a raytracing algorithm to render spheres and triangles inside a 3D space. Therefore, 
+                    I placed a fixed camera and a canvas inside a coordinate axis. Outgoing from the camera rays are casted to each pixel of 
+                    the canvas. The intersection of the ray with any object in space is calculated and the nearest object is drawn onto this 
+                    canvas pixel.
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="\rayTracing">Demo</a>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://github.com/Roqum/Raytracing-Rendering-in-Console">Source Code</a>
+
+                </div>
+            </div>
+            <hr className='hrStyle my-5'/>
+
             <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Top Down RPG Controll Demo</h4>
                 <div className='col-sm-4 col-12'>
@@ -87,80 +164,6 @@ return (
                 <hr className='hrStyle my-5'/>
             </div>
 
-
-            <div className='row py-0 fc-gray800'>
-                <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console </h4>
-                <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="raytracing" src={'https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
-                            onMouseOver={() => changeImage("raytracing", require("../gifs/Raytracing.gif"))} 
-                            onMouseLeave={() => changeImage("raytracing", "https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg")}
-                        />
-                    <div className="mt-2 mb-4">
-                    <span className='badge rounded-pill bg-date-badge me-1'>2020</span>
-                        <span className='badge rounded-pill bg-orange'>Python</span>
-                    </div>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    In this project I used a raytracing algorithm to render spheres and triangles inside a 3D space. Therefore, 
-                    I placed a fixed camera and a canvas inside a coordinate axis. Outgoing from the camera rays are casted to each pixel of 
-                    the canvas. The intersection of the ray with any object in space is calculated and the nearest object is drawn onto this 
-                    canvas pixel.
-                    </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="\rayTracing">See more</a>
-
-                </div>
-            </div>
-            <hr className='hrStyle my-5'/>
-
-            <div className='row pt-5 fc-gray800'>
-                <h4 className='pb-4'>Neural Network for Quark-Gluon-Plasma detection</h4>
-                <div className='col-sm-4 col-12'>
-                    <img className="mw-100" src={"https://david-burgstaller.com/api/images/CNN.jpg"}/>
-                    <span className='badge rounded-pill bg-date-badge me-1'>2019</span>
-                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>C++</span>
-                    <span className='badge rounded-pill bg-orange me-1 mt-2 mb-4'>Qt</span>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    As a part of an university project, we received a big dataset from a particle accelerator. 
-                    The data contains information about the collision of particles. In some of these collisions, Quark-Gluon-Plasma (QGP) emerged 
-                    but in some it doesn't. In a team of three students, our task was to develop a convolutional neural network which has to detect 
-                    if QGP has emerged, or it has not emerged by just receiving the collision data.
-                    
-                         
-                    </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="\cnn">See more</a>
-                </div>
-                <hr className='hrStyle my-5'/>
-            </div>
-
-            <div className='row pt-5 fc-gray800'>
-                <h4 className='pb-4'>Configurable Procedural Hextile-map Generator</h4>
-                <div className='col-sm-4 col-12'>
-                    <img className="mw-100" id="mapGenerator" src={"https://david-burgstaller.com/api/images/MapGenerator.jpg"} 
-                        onMouseOver={() => changeImage("mapGenerator", require("../gifs/MapGeneratorGif.gif"))} 
-                        onMouseLeave={() => changeImage("mapGenerator", "https://david-burgstaller.com/api/images/MapGenerator.jpg")}
-                    />
-                     <div className="mt-2 mb-4">
-                     <span className='badge rounded-pill bg-date-badge me-1'>2022</span>
-                        <span className='badge rounded-pill bg-orange me-1'>C#</span>
-                        <span className='badge rounded-pill bg-orange me-1'>Unity</span>
-                    </div>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    With this little project my goal was to get to know the Unity engine and to learn more about procedural generation inside of games.
-                    </p>
-                    <p>
-                    I wrote a script which is drawing the vertices and polygons of a single hexagon-tile. A map generator draws multiple of these hexagons and assigns each of them
-                    a type randomly using perlin noise. The types should refer to "water", "grass" and "forest". Together they would form a world for a strategy game.
-                    </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="https://github.com/Roqum/Precedural_HextileMap_Generator">Source Code</a>
-                </div>
-                <hr className='hrStyle my-5'/>
-            </div>
-
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Data Visualization Website (Bachelor Thesis)</h4>
                 <div className='col-sm-4 col-12'>
@@ -178,18 +181,20 @@ return (
                 </div>
                 <div className='col-sm-8 col-12'>
                     <p>
-                        This is a website I created for my bachelor thesis project. 
-                        It is a responsive data visualization website with some data mining algorithms to get valuable information out of a big dataset.
+                        For my bachelor thesis I received a data set with information about 20 000 educational courses from the german-speaking area. It was a huge JSON file with all the data stuffed in there. 
+                        My task was to visualize the data so that valuable hidden information could be discovered to investigate  the educational situation in Germany.
                     </p> 
                     <p>
-                        The data is from the metasearch machine "InfoWeb Weiterbildung (IWWB)". It searches for courses located in German-speaking 
-                        area. My main focus in this visualization was the responsive map where each course is marked. Also, I coded a little 
-                        categorization algorithm to classify the courses in different categories by their titles.
+                        My main focus was to visualize the geo data of the courses on a large map. My second goal was to assign the courses to distinct categories and display them with a color on the website.
+                    </p>
+                    <p> 
+                        I implemented some Data Mining methods and developed a algorithm that categorized the courses into different areas. During all of that I, had to solve several performance issues due to the large data size.
                     </p>
                     <p>
-                        Live Demo: <a className='link-underline-opacity-0 link-light link-underline-opacity-75-hover' href="https://dashboard.iplus.svc.educs-hosting.net/">https://dashboard.iplus.svc.educs-hosting.net/</a>
+                        <b>If you want to have more detail about how I created the website, my thesis is attached to the source code.</b>
                     </p>
-                    <a className="align-bottom bg-orange btn btn-primary" href="https://github.com/Roqum/Bachelorarbeit_Dashboard">Source Code</a>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://dashboard.iplus.svc.educs-hosting.net/">Live Demo</a>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://github.com/Roqum/Bachelorarbeit_Dashboard">Source Code</a>
                 </div>        
                 <hr className='hrStyle my-5'/>
             </div>
