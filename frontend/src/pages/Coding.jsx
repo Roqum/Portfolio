@@ -113,6 +113,32 @@ return (
             </div>
 
             <div className='row py-0 fc-gray800'>
+                <h4 className='pb-4'>Top Down RPG Controll Demo</h4>
+                <div className='col-sm-4 col-12'>
+                    <video autoPlay className='w-100' muted='true' loop>
+                        <source src="https://david-burgstaller.com/api/video/TopDownRPG.mp4" type="video/mp4" />
+                    </video>
+                    <div className="mt-2 mb-4">
+                        <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
+                        <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
+                    </div>
+                </div>
+                <div className='col-sm-8 col-12'>
+                    <p>
+                    After the successful usage of Godot in the Melon Game Jam 2023 I decided to test the engine even more by 
+                    creating a little 3D game. So I created this little demonstration of a character and focused on keeping the code clean by a clean seperation
+                    of animation and game logic.
+                    </p>
+                    <p>
+                    Godot is a pretty strong lightweight engine and phenomenal for 2D games, but for 3D games it still has its 
+                    limits. So I decided to leave this project as it is and stick with Unreal Engine as I love creating 3D games.
+                    </p>
+                    <a className="align-bottom bg-orange btn btn-primary mx-1 px-1 py-1" href="https://github.com/Roqum/TopDownRPGControlls">Source Code</a>
+                </div>
+                <hr className='hrStyle my-5'/>
+            </div>
+
+            <div className='row py-0 fc-gray800'>
                 <h4 className='pb-4'>Raytracing Rendering of simple 3D Objects in Console</h4>
                 <div className='col-sm-4 col-12'>
                     <img className="mw-100" id="raytracing" src={'https://david-burgstaller.com/api/images/RaytracingThreeSpheres.jpg'}
@@ -137,32 +163,6 @@ return (
                 </div>
             </div>
             <hr className='hrStyle my-5'/>
-
-            <div className='row py-0 fc-gray800'>
-                <h4 className='pb-4'>Top Down RPG Controll Demo</h4>
-                <div className='col-sm-4 col-12'>
-                    <video autoPlay className='w-100' muted='true' loop>
-                        <source src="https://david-burgstaller.com/api/video/TopDownRPG.mp4" type="video/mp4" />
-                    </video>
-                    <div className="mt-2 mb-4">
-                        <span className='badge rounded-pill bg-date-badge me-1'>2023</span>
-                        <span className='badge rounded-pill bg-orange me-1'>Godot Engine</span>
-                    </div>
-                </div>
-                <div className='col-sm-8 col-12'>
-                    <p>
-                    After the successful usage of Godot in the Melon Game Jam 2023 I decided to test the engine even more by 
-                    creating a little 3D game. So I created this little demonstration of a character. I used free pre-made assets 
-                    and animated them first by myself, but then decided to replace the animation with some free ones from Adobe 
-                    Mixamo. Otherwise, it would take way too long.
-                    </p>
-                    <p>
-                    Godot is a pretty strong lightweight engine and phenomenal for 2D games, but for 3D games it still has its 
-                    limits. So I decided to leave this project as it is and stick with Unreal Engine as I love creating 3D games.
-                    </p>
-                </div>
-                <hr className='hrStyle my-5'/>
-            </div>
 
             <div className='row pt-5 fc-gray800'>
                 <h4 className='pb-4'>Data Visualization Website (Bachelor Thesis)</h4>
